@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- seo - 검색 최적화 설정 -->
+    <meta name="description" content="웹디자이너 포트폴리오 용도로 사용">
+    <meta name="jeyword" content="웹디자이너 포트폴리오, 웹퍼블리셔 포트폴리오, 포트폴리오 디자인 용도">
+    <meta name="author" content="웹디자이너 이은지">
+    <!-- 검색 엔진이 페이지 색인 허용시킴(선택적으로 사용) -->
+    <meta name="robots" content="index, follow">
+    <link rel="icon" sizes="32x32" type="image/png" href="./img/favicon2.png">
+
+    <!-- 오픈그래프 설정(카카오톡,페이스북과 같은 곳에 링크로 공유될 때 보여지는 카드 정보 내용) -->
+    <meta property="og:title" content="취업용 포트폴리오 웹사이트">
+    <meta property="og:description" content="취업용도의 웹디자이너 포트폴리오 웹사이트 입니다. ">
+    <meta property="og:url" content="/"> <!-- 도메인 사서 컨텐츠 안에 넣기 -->
+    <meta property="og:image" content="./img/opencard.png">
+    <meta property="og:type" content="website">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/system.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</head>
+<div>
+
+     <header id="main-header">
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#popup">POPUP</a></li>
+                <li><a href="#banner">BANNER</a></li>
+                <li><a href="#poster">POSTER</a></li>
+                <li><a href="#detailed-page">DETAILED PAGE</a></li>
+                <li><a href="#web-design">WEB DESIGN</a></li>
+                <li><a href="#package">PACKAGE</a></li>
+                <li><a href="#mat-painting">MAT PAINTING</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+<!-- 히어로 섹션 ------------------------------------------------------------------------------------------------------------------------------------------>
+    <section class="hero">
+        <div class="common-fram">
+            <video class="bg-video-layer" autoplay loop muted playsinline>
+                <source src="./img/video.mp4" type="video/mp4">
+            </video>
+            <figure class="key">
+                 <img src="./img/hero.png" alt="">
+            </figure>
+        </div> 
+
+ <!-- 버튼 레이아웃 --------------------------------------------------------------------------------------------- -->
+        <h1 class="welcome-title alex fade-in-up">Welcome</h1>
+            <div class="envelope-area fade-in-up">
+                <img src="./img/pop.png" alt="White Envelope" class="envelope-image">
+            </div>
+            <div class="button-container fade-in-up">
+                <button class="btn" id="btnConcept">Concept</button>
+                <button class="btn" id="btnColorsFonts">Colors And Fonts</button>
+            </div>
+
+            <div class="modal-overlay" id="modalConcept">
+                <div class="modal-box">
+                    <div class="modal-header">
+                        <h2 class="modal-title alex">Concept</h2>
+                        <button class="close-btn" id="closeConcept">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="concept-item">
+                            <h3>[Scorpio]</h3>
+                            <p>전갈은 어떤 환경에서도 살아 남고, 목표를 놓치지 않는다는 점을 가지고 있습니다.<br>이 집요함을 저의 성격과 디자인 태도로 보여주는 하나의 요소로 잡았습니다.</p>
+                        </div>
+                        <div class="concept-item">
+                            <h3>[Key]</h3>
+                            <p>문제(자물쇠) 앞에서 정확하게 맞물리는 해결사가 되겠다는 포부를 가지고 있습니다.<br>전갈과 열쇠를 결합하여 뜨거운 열정으로 해결책을 만들기 위해 노력하는 사람이라는 의미를 담았습니다.</p>
+                        </div>
+                        <div class="concept-item">
+                            <h3>[Lace]</h3>
+                            <p>촘촘한 레이스의 성질이 전갈자리의 집요함과 레이스의 디테일함을 합쳐 감각과 구조를 동시에 다룰 수 있다는 메시지를 담았습니다.</p>
+                        </div>
+                        
+                        <div class="visual-equation">
+                            <div class="icon-circle"><img src="./img/scorpio.png" alt="Scorpio"></div>
+                            <span class="math-symbol">+</span>
+                            <div class="icon-circle"><img src="./img/key-icon.png" alt="Key"></div>
+                            <span class="math-symbol">+</span>
+                            <div class="icon-circle"><img src="./img/pp-icon.png" alt="Lace"></div>
+                            <span class="math-symbol">→</span>
+                            <div class="icon-circle"><img src="./img/hu-icon.png" alt="Person"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-overlay" id="modalColorsFonts">
+                <div class="modal-box">
+                    <div class="modal-header">
+                        <h2 class="modal-title alex">Font</h2>
+                        <button class="close-btn" id="closeColorsFonts">&times;</button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="font-row">
+                            <div class="font-label">Point</div>
+                            <div class="font-preview preview-alex">Scorpio</div>
+                            <div class="font-line"></div>
+                            <div class="font-name">[Alex Brush]</div>
+                            <div class="font-desc">"디자인 요소 간의 균형과 디테일을 통해 완성도 높은 UI를 구현합니다. 단순한 미적 표현을 넘어, 브랜드 가치를 전달하는 디자인을 만듭니다."</div>
+                        </div>
+                        <div class="font-row">
+                            <div class="font-label">Main</div>
+                            <div class="font-preview preview-angkor">Scorpio</div>
+                            <div class="font-line"></div>
+                            <div class="font-name">[Angkor]</div>
+                            <div class="font-desc">"디자인 요소 간의 균형과 디테일을 통해 완성도 높은 UI를 구현합니다. 단순한 미적 표현을 넘어, 브랜드 가치를 전달하는 디자인을 만듭니다."</div>
+                        </div>
+                        <div class="font-row">
+                            <div class="font-label"></div> <div class="font-preview preview-suit">Scorpio</div>
+                            <div class="font-line"></div>
+                            <div class="font-name">[SUIT]</div>
+                            <div class="font-desc">"디자인 요소 간의 균형과 디테일을 통해 완성도 높은 UI를 구현합니다. 단순한 미적 표현을 넘어, 브랜드 가치를 전달하는 디자인을 만듭니다."</div>
+                        </div>
+
+                        <div class="modal-header">
+                            <h2 class="modal-title alex">Color</h2>
+                        </div>
+                        
+                        <div class="color-section">
+                            <div class="color-item">
+                                <div class="color-circle circle-point">Point</div>
+                                <p class="color-desc">"디자인 요소 간의 균형과 디테일을 통해 완성도 높은 UI를 구현합니다. 단순한 미적 표현을 넘어, 브랜드 가치를 전달하는 디자인을 만듭니다."</p>
+                            </div>
+                            <div class="color-item">
+                                <div class="color-circle circle-typo">Typography</div>
+                                <p class="color-desc">"디자인 요소 간의 균형과 디테일을 통해 완성도 높은 UI를 구현합니다. 단순한 미적 표현을 넘어, 브랜드 가치를 전달하는 디자인을 만듭니다."</p>
+                            </div>
+                            <div class="color-item">
+                                <div class="color-circle circle-bg">Background</div>
+                                <p class="color-desc">"디자인 요소 간의 균형과 디테일을 통해 완성도 높은 UI를 구현합니다. 단순한 미적 표현을 넘어, 브랜드 가치를 전달하는 디자인을 만듭니다."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+            <figure>
+                <div class="look fade-in-up"><img src="./img/look1.png" alt="자물쇠"></div>
+            </figure>
+
+<!-- 어바웃 미 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <section class="about-me lace-style fade-in-up ">
+                <div class="about-text fade-in-up content-box2">
+                    <h2 class="alex fade-in-up">About  me</h2>
+                    <h5 class="fade-in-up">사용자 경험을 기반으로 직관적이고 트렌디한 웹 디자인을 구현합니다.<br>데이터와 흐름을 고려한 설계를 통해, 사용자가 머무르고 싶은 화면을 만듭니다.<br>디자인과 사용성, 두 가지를 모두 만족시키는 결과물을 만들기 위하여 노력합니다.</h5>
+    
+                    <button class="fade-in-up">profile</button>
+    
+                    <div class="grid-text fade-in-up">
+                        <div class="text1">
+                            <h4 class="alex">Design Strengths</h4>
+                            <ul>
+                                <li>시각적 완성도를 높이는 UI 디자인
+                                    <p>디자인 요소 간의 균형과 디테일을 통해 완성도 높은 UI를 구현합니다.단순한 미적 표현을 넘어, 브랜드 가치를 전달하는 디자인을 만듭니다.</p>
+                                </li>
+                                <li>사용자 중심으로 사고하는 디자인 접근
+                                    <p>사용자의 행동과 흐름을 기반으로 직관적인 인터페이스를 설계합니다.누구나 쉽게 이해하고 사용할 수 있는 경험을 만드는 데 집중합니다.</p>
+                                </li>
+                                <li>작은 디테일까지 설계하는 완성도
+                                    <p>보이지 않는 부분까지 고민하는 디테일로 디자인의 완성도를 높입니다.작은 차이가 전체 경험을 바꾼다고 믿습니다.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text2">
+                            <h4 class="alex">Collaboration Skills</h4>
+                            <ul>
+                                <li>원활한 커뮤니케이션을 위한 노력
+                                    <p>기획자와 개발자의 의견을 이해하고자 적극적으로 소통하며, 작업 의도를 정확하게 전달하려고 노력합니다. 협업 과정에서 생기는 차이를 줄이기 위해 꾸준히 커뮤니케이션합니다.</p>
+                                </li>
+                                <li>협업을 고려한 디자인 이해
+                                    <p>디자인뿐 아니라 개발 과정에 대한 이해를 바탕으로, 구현 가능성을 고려한 작업을 지향합니다.협업의 흐름을 이해하며 효율적인 결과물을 만들고자 합니다.</p>
+                                </li>
+                                <li>피드백을 통한 성장
+                                    <p>피드백을 긍정적으로 받아들이고, 이를 빠르게 반영하여 더 나은 결과물을 만들기 위해 노력합니다.협업 과정 속에서 배우고 성장하는 디자이너입니다.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-section content-box2">
+                    <h2 class="skills-title alex fade-in-up">Skill</h2>
+                    
+                    <div class="skills-grid fade-in-up">
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="./img/photo-logo.png" alt="포토샵"></div>
+                            <div class="skill-content">
+                                <div class="skill-level-labels">
+                                    <span>Low</span>
+                                    <span>High</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 85%;"></div>
+                                </div>
+                                <div class="skill-details">
+                                    <p>고급 합성과 리터칭을 자연스럽게 구현가능</p>
+                                    <p>브랜드 아이덴티티를 반영한 비주얼 제작가능</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="./img/room-logo.png" alt="라이트룸"></div>
+                            <div class="skill-content">
+                                <div class="skill-level-labels">
+                                    <span>Low</span>
+                                    <span>High</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 70%;"></div>
+                                </div>
+                                <div class="skill-details">
+                                    <p>노출, 대비, 색온도 등 기본 보정 가능</p>
+                                    <p>SNS 업로드용 보정 이미지 제작 가능</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="./img/css-logo.png" alt="css"></div> 
+                            <div class="skill-content">
+                                <div class="skill-level-labels">
+                                    <span>Low</span>
+                                    <span>High</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 75%;"></div>
+                                </div>
+                                <div class="skill-details">
+                                    <p>반응형 디자인 (미디어 쿼리) 구현가능</p>
+                                    <p>애니메이션 및 트랜지션 활용 가능</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="./img/ill-logo.png" alt="일러스트레이션"></div>
+                            <div class="skill-content">
+                                <div class="skill-level-labels">
+                                    <span>Low</span>
+                                    <span>High</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 80%;"></div>
+                                </div>
+                                <div class="skill-details">
+                                    <p>정밀한 패스 컨트롤과 고급 벡터 드로잉가능</p>
+                                    <p>인쇄/디지털 매체에 최적화된 결과물 제작가능</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="./img/figma-logo.png" alt="피그마"></div>
+                            <div class="skill-content">
+                                <div class="skill-level-labels">
+                                    <span>Low</span>
+                                    <span>High</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 65%;"></div>
+                                </div>
+                                <div class="skill-details">
+                                    <p>오토 레이아웃(Auto Layout) 활용한 구조 설계</p>
+                                    <p>실무 협업이 가능한 프로토타입 가능</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="./img/java-logo.png" alt="자바스크립트"></div>
+                            <div class="skill-content">
+                                <div class="skill-level-labels">
+                                    <span>Low</span>
+                                    <span>High</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 40%;"></div>
+                                </div>
+                                <div class="skill-details">
+                                    <p>변수, 조건문, 반복문 등 기본 문법 이해</p>
+                                    <p>기초적인 동적 웹페이지 동작 가능</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="./img/prem-logo.png" alt="프리미어프로"></div>
+                            <div class="skill-content">
+                                <div class="skill-level-labels">
+                                    <span>Low</span>
+                                    <span>High</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 50%;"></div>
+                                </div>
+                                <div class="skill-details">
+                                    <p>타임라인 편집 가능</p>
+                                    <p>간단한 브이로그 편집가능</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill-card" id="pull">
+                            <div class="skill-icon"><img src="./img/ai-logo.png" alt="Ai"></div>
+                            <div class="skill-content">
+                                <div class="skill-level-labels">
+                                    <span>Low</span>
+                                    <span>High</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 50%;"></div>
+                                </div>
+                                <div class="skill-details">
+                                    <p>실무 작업(디자인, 콘텐츠 제작 등)에 적용 가능</p>
+                                    <p>재미나이,미드저니,클로드,파이어플라이등</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="./img/aft-logo.png" alt="애프터이펙트"></div>
+                            <div class="skill-content">
+                                <div class="skill-level-labels">
+                                    <span>Low</span>
+                                    <span>High</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 50%;"></div>
+                                </div>
+                                <div class="skill-details">
+                                    <p>간단한 텍스트 애니메이션 제작가능</p>
+                                    <p>키프레임을 활용한 기본 애니메이션가능</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><img src="./img/html-logo.png" alt="HTML"></div>
+                            <div class="skill-content">
+                                <div class="skill-level-labels">
+                                    <span>Low</span>
+                                    <span>High</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 50%;"></div>
+                                </div>
+                                <div class="skill-details">
+                                    <p>시맨틱 태그(header, section 등) 활용</p>
+                                    <p>CSS/JS와의 구조적 연동 고려한 마크업 작성 </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    
+
+<!-- 팝업 진열 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+   <section class="kp-popup-showcase">
+        
+        <div class="kp-popup-showcase__header">
+            <div class="kp-popup-showcase__header-number">01</div>
+                <div class="elastic-container fade-in-up">
+                        <svg style="height: 50px; width: 100%;" stroke="red">
+                            <path class="elastic-path" fill="transparent" stroke="black"></path>
+                        </svg>
+                </div>
+            <div class="kp-popup-showcase__header-title alex">Popup Design</div>
+            <p class="kp-popup-showcase__header-description">
+                팝업 디자인 이벤트 프로모션 상황에 바로 활용할 수 있는 팝업 디자인입니다. 공지, 할인, 이벤트 참여 유도까지 다양한 목적에 맞게 여러 스타일로 제작했습니다. 깔끔하고 눈에 띄는 디자인으로 사용자의 시선을 사로잡고, 원하는 메시지를 효과적으로 전달하기 위해 디자인하였습니다.
+            </p>
+        </div>
+
+        <div class="kp-popup-showcase__phone-mockup">
+            <img src="./img/iPhone-16-Pro 2.png" alt="Nike Air Force Spotlight on Phone">
+        </div>
+
+        <div class="kp-popup-showcase__content">
+            
+            <div class="kp-popup-showcase__info-panel" id="kp-info-panel">
+                <div class="kp-popup-showcase__info-number">01</div>
+                <h3 class="kp-popup-showcase__info-title">블랙프라이데이</h3>
+                <p class="kp-popup-showcase__info-description">
+                    블랙프라이데이 프로모션을 위한 팝업 디자인으로, 어두운 배경과 핑크 네온 컬러를 활용해 강렬한 대비와 시각적 집중도를 극대화했습니다. 중앙에는 택배 상자 모티프를 배치하여 '배송'과 '구매 완료'의 이미지를 직관적으로 전달하고, 주변에 반짝이는 아이콘 요소를 더해 기대감과 혜택의 분위기를 강조했습니다. 전체적으로 소비자의 즉각적인 구매 행동을 유도할 수 있도록 설계된 프로모션 중심의 비주얼 전략을 반영했습니다.
+                </p>
+            </div>
+
+            <div class="kp-popup-showcase__slider-container">
+                <div class="kp-popup-showcase__slider-wrapper">
+                    <div class="kp-popup-showcase__slider-slide kp-active" 
+                         data-number="01"
+                         data-title="블랙프라이데이"
+                         data-description="블랙프라이데이 프로모션을 위한 팝업 디자인으로, 어두운 배경과 핑크 네온 컬러를 활용해 강렬한 대비와 시각적 집중도를 극대화했습니다. 중앙에는 택배 상자 모티프를 배치하여 '배송'과 '구매 완료'의 이미지를 직관적으로 전달하고, 주변에 반짝이는 아이콘 요소를 더해 기대감과 혜택의 분위기를 강조했습니다. 전체적으로 소비자의 즉각적인 구매 행동을 유도할 수 있도록 설계된 프로모션 중심의 비주얼 전략을 반영했습니다.">
+                        <img src="img/poster1.png" alt="Black Friday Poster">
+                    </div>
+                    <div class="kp-popup-showcase__slider-slide" 
+                         data-number="02"
+                         data-title="나이키 에어포스 1 '07"
+                         data-description="어떤 스타일에도 자연스럽게 어울리는 변하지 않는 기준, 나이키 에어포스 1 '07 팝업 디자인입니다. 화이트 컬러의 깔끔함을 강조하는 비주얼로 제품의 아이코닉한 디자인을 부각시켰습니다. 심플하면서도 고급스러운 무드를 연출하여 브랜드 이미지를 제고하고, 즉각적인 구매 유도를 위한 'BUY NOW' 버튼을 배치했습니다.">
+                        <img src="img/poster2.png" alt="Nike Air Force Poster">
+                    </div>
+                    <div class="kp-popup-showcase__slider-slide" 
+                         data-number="03"
+                         data-title="크리스마스 선물 제안"
+                         data-description="따뜻하고 설레는 크리스마스 시즌을 맞아 소중한 사람을 위한 선물을 제안하는 팝업 디자인입니다. 아기자기한 선물 상자와 오너먼트 일러스트를 활용해 연말 특유의 분위기를 담아냈습니다. 특별한 혜택 정보를 눈에 띄게 배치하여 시즌 쇼핑의 즐거움을 더하고, 고객의 참여를 유도합니다.">
+                        <img src="img/poster3.png" alt="Christmas Gift Poster">
+                    </div>
+                    <div class="kp-popup-showcase__slider-slide" 
+                         data-number="01"
+                         data-title="블랙프라이데이"
+                         data-description="...">
+                        <img src="./img/popup4.png" alt="Black Friday Poster Copy">
+                    </div>
+                    <div class="kp-popup-showcase__slider-slide" 
+                         data-number="01"
+                         data-title="블랙프라이데이"
+                         data-description="...">
+                        <img src="./img/popup5.png" alt="Black Friday Poster Copy">
+                    </div>
+                    <div class="kp-popup-showcase__slider-slide" 
+                         data-number="01"
+                         data-title="블랙프라이데이"
+                         data-description="...">
+                        <img src="./img/popup6.png" alt="Black Friday Poster Copy">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+<!-- 포스터 영역 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="poster">
+        <div class="common-fram">
+            <span class="number">02</span>
+             <div class="elastic-container fade-in-up">
+                    <svg style="height: 50px; width: 100%;" stroke="red">
+                        <path class="elastic-path" fill="transparent" stroke="black"></path>
+                    </svg>
+                </div>
+            <div class="container-text">
+                <h2 class="title alex">Poster Design</h2>
+                <p class="description">
+                    포스터 디자인 브랜드의 무드와 감성을 한눈에 전달하는 포스터 디자인 입니다. 새로운 제품 출시부터 특별한 행사 안내까지, 브랜드의 소식을 감각적이고 세련되게 알릴 수 있도록 다양한 스타일로 제작하였습니다.
+                </p>
+            </div>
+        </div>
+               
+
+            <div class="container fade-in-up" id="boundary">
+
+            <div class="frame-inner">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1" data-title="MA CHERIE" data-desc="향수의 몽환적인 무드를 강조한 포스터 디자인으로, 부드럽고 확산되는 빛 효과를 적용해 감각적이고 신비로운 분위기를 연출하였습니다. 모델의 포즈를 제품 이미지와 조화롭게 구성하여 향수의 감성적 이미지를 시각적으로 확장하였습니다. 특히 향수 제품이 얼굴의 일부를 가리도록 하여 시선을 자연스럽게 제품으로 집중시키고, 로우 앵글 구도를 활용해 제품의 존재감을 극대화하였습니다. 타이포그래피는 세리프 계열을 사용하여 고급스럽고 우아한 브랜드 이미지를 강조하였으며, 브랜드명을 크게 배치하고 여백을 최소화하여 시각적 임팩트를 강화함으로써 브랜드 인지도를 높이는 방향으로 디자인하였습니다."><img src="./img/poster1-1.png" alt=""></div>
+                    <div class="swiper-slide slide-2" data-title="MELLO" data-desc="크림 말차 라떼 프로모션을 위한 카페 음료 포스터 디자인으로, 제품의 부드러운 크림 텍스처를 강조하기 위해 숟가락으로 크림이 떨어지는 순간을 시각적으로 표현하였습니다. 이를 통해 입안에서 부드럽게 퍼지는 질감을 직관적으로 전달하고, 제품의 촉감적 이미지를 강화하였습니다. 타이포그래피는 화이트 컬러를 기반으로 구성하고, 메인 타이포 주변에 말차 그린 계열의 반사광 효과를 적용해 신선하고 은은한 풍미를 시각화하였습니다. 전체적으로 크리미함과 말차의 조화를 강조하여, 제품의 감각적 매력을 극대화한 디자인으로 구성하였습니다."><img src="./img/poster1-2.png" alt=""></div>
+                    <div class="swiper-slide slide-3" data-title="HANDS&HOUR" data-desc="컬러풀하고 독창적인 디자인의 가구를 강조하기 위한 포스터 디자인으로, 화면 전체를 활용한 타이트한 레이아웃으로 구성하여 시각적 밀도와 에너지를 극대화하였습니다. 타이포그래피는 크게 배치하여 강한 시각적 중심을 형성하고, 제품 이미지와 자연스럽게 얽히도록 구성함으로써 전체적으로 꽉 찬 구성 속에서도 정보 위계가 명확하게 전달되도록 설계하였습니다."><img src="./img/poster1-3.png" alt=""></div>
+                    <div class="swiper-slide slide-3" data-title="NEO-FLUX" data-desc="힙한 개성을 지닌 패션 브랜드 무드를 강조하기 위해 동적인 비주얼 중심으로 포스터를 디자인하였습니다. 모델이 걸어가는 장면을 전·후면으로 분할 배치하고, 잔상 효과를 적용하여 움직임과 에너지가 느껴지는 힙한 분위기를 연출하였습니다. 착장 제품에는 박스형 그래픽 요소를 활용해 제품명을 명확히 표기함으로써 패션 아이템에 대한 정보 전달력을 강화하였습니다. 또한 인쇄물에서 사용되는 다양한 타이포 및 기호 요소를 추가하여 그래픽적인 완성도를 높이고, 스트리트 감성과 브랜드 아이덴티티가 결합된 비주얼로 구성하였습니다."><img src="./img/poster2-1.png" alt=""></div>
+                    <div class="swiper-slide slide-3" data-title="FLO" data-desc="크림 음료를 주력으로 판매하는 카페 브랜드의 무드를 알리기 위한 포스터 디자인으로, 크림이 자연스럽게 흘러내리는 비주얼을 중심으로 음료의 부드러운 질감과 즐거운 경험을 시각적으로 표현하였습니다. 서로 잔을 부딪히며 음료를 즐기는 상황을 연상시키는 구성으로, 브랜드가 지향하는 소셜한 분위기를 강화하였습니다. 상단에는 브랜드명을 크게 배치하여 인지도를 높이되, 채도를 낮춘 컬러 톤으로 처리해 크림 음료와 조화를 이루도록 설계하였습니다. 또한 노란색과 파란색 포인트 컬러를 활용해 제품 주변에 시선 유도 효과를 주고 시각적 위계를 형성하였습니다. 여기에 빈티지 텍스처를 적용해 주 고객층인 젊은 타깃층이 선호하는 레트로 감성을 더한 포스터로 완성하였습니다."><img src="./img/poster2-2.png" alt=""></div>
+                    <div class="swiper-slide slide-3" data-title="보롬왓 메밀 축제" data-desc="자연의 싱그러움을 담은 세 번째 상품 설명입니다. 스와이프하여 확인해보세요."><img src="./img/poster2-3.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-box" id="dragBox">
+                <h3 id="infoTitle">MA CHERIE</h3>
+                <p id="infoDesc">향수의 몽환적인 무드를 강조한 포스터 디자인으로, 부드럽고 확산되는 빛 효과를 적용해 감각적이고 신비로운 분위기를 연출하였습니다. 모델의 포즈를 제품 이미지와 조화롭게 구성하여 향수의 감성적 이미지를 시각적으로 확장하였습니다. 특히 향수 제품이 얼굴의 일부를 가리도록 하여 시선을 자연스럽게 제품으로 집중시키고, 로우 앵글 구도를 활용해 제품의 존재감을 극대화하였습니다. 타이포그래피는 세리프 계열을 사용하여 고급스럽고 우아한 브랜드 이미지를 강조하였으며, 브랜드명을 크게 배치하고 여백을 최소화하여 시각적 임팩트를 강화함으로써 브랜드 인지도를 높이는 방향으로 디자인하였습니다.
+</p>
+            </div>
+
+        </div>
+
+</div>
+
+</section>    
+<!-- 배너 영역------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- <section class="banner">
+        <h2 class="poster-title alex fade-in-up">Banner</h2>
+                        <div class="elastic-container fade-in-up">
+                            <svg style="height: 50px; width: 100%;" stroke="red">
+                                <path class="elastic-path" fill="transparent" stroke="black"></path>
+                            </svg>
+                        </div>
+                        <div class="intro-box fade-in-up" style="text-align: center;">
+                            <p>브랜드 메시지를 효과적으로 전달하기 위해 시각적 균형과 타이포그래피를 강조한 배너 디자인입니다. </p>
+                        </div>
+              
+
+
+        <div class="banner">
+        <div class="common-frame">
+            <div class="swiper banner-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-bn">
+                        <img src="./img/Scarf-banne.jpg" alt="스카프 배너">
+                    </div>
+                    <div class="swiper-slide swiper-slide-bn">
+                        <img src="./img/Perfume-Banner.jpg" alt="퍼퓸 배너">
+                    </div>
+                    <div class="swiper-slide swiper-slide-bn">
+                        <img src="./img/BlackFriday-Banner.jpg" alt="블랙프라이데이배너">
+                    </div>
+                    <div class="swiper-slide swiper-slide-bn">
+                        <img src="./img/Pimawon-Banner.jpg" alt="피마원 배너">
+                    </div>
+                    <div class="swiper-slide swiper-slide-bn">
+                        <img src="./img/Adidas-Banner.jpg" alt="아디다스 배너">
+                    </div>
+                    <div class="swiper-slide swiper-slide-bn">
+                        <img src="./img/Christmas-Banner.jpg" alt="크리스마스 배너">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </section> -->
+
+<div class="banner-container">
+    <div class="common-fram">
+        <div class="sh">
+            <div class="number">03</div>
+            <div class="elastic-container fade-in-up">
+                    <svg style="height: 50px; width: 100%;" stroke="red">
+                        <path class="elastic-path" fill="transparent" stroke="black"></path>
+                    </svg>
+            </div>
+            
+        </div>
+
+        <section class="bncontent-section">
+            <div class="billboard-container">
+                <img src="./img/US_11 1.png" alt="Acne Studios 배너 빌보드" class="billboard-image">
+            </div>
+           
+
+            <div class="content-text-container">
+                <h1 class="title alex">Banner Design</h1>
+                <p class="paragraph">
+                    브랜드 메시지를 효과적으로 전달하기 위해 시각적 균형과 타이포그래피를 강조한 배너 디자인입니다.
+                </p>
+            </div>
+        </section>
+
+        <div class="slider-wrapper">
+            <div class="slider-track" id="sliderTrack">
+                
+                <div class="slide">
+                    <div class="poster-image">
+                        <img src="./img/Scarf-banne.jpg" alt="Acne Studios Hooded Scarf">
+                    </div>
+                    <div class="slide-info">
+                        <div class="info-title">
+                            <h3>HOODED SCARF<br>신제품 홍보 배너</h3>
+                        </div>
+                        <div class="info-desc">
+                            <p>블랙프라이데이기념 상품을 홍보하기 위하여 제작하였습니다. 블랙프라이데이기념 상품을 홍보하기 위하여 제작하였습니다. 블랙프라이데이기념 상품을 홍보하기 위하여 제작하였습니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="poster-image">
+                        <img src="./img/Perfume-Banner.jpg" alt="Acne Studios Hooded Scarf">
+                    </div>
+                    <div class="slide-info">
+                        <div class="info-title">
+                            <h3>SECOND SCARF<br>두 번째 홍보 배너</h3>
+                        </div>
+                        <div class="info-desc">
+                            <p>하기시러</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="poster-image">
+                        <img src="./img/BlackFriday-Banner.jpg" alt="Acne Studios Hooded Scarf">
+                    </div>
+                    <div class="slide-info">
+                        <div class="info-title">
+                            <h3>THIRD SCARF<br>세 번째 홍보 배너</h3>
+                        </div>
+                        <div class="info-desc">
+                            <p>하기싫어</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+<!-- 상세페이지 -->
+
+
+<!-- 
+<section class="detail" id="detail">
+        <h2 class="Detail-title alex fade-in-up">Detail Page</h2>
+                        <div class="elastic-container fade-in-up">
+                            <svg style="height: 50px; width: 100%;" stroke="red">
+                                <path class="elastic-path" fill="transparent" stroke="black"></path>
+                            </svg>
+                        </div>
+                        <div class="intro-box fade-in-up" style="text-align: start;">
+                            <p>제품의 특징과 정보를 한눈에 이해할 수 있도록 구성과 시각적 흐름을 고려한 상세페이지 디자인입니다.</p>
+                        </div>
+
+
+    <div class="detail-grid fade-in-up">
+        
+        <div class="detail-card">
+            <a href="./DetailPage1.html">
+                <figure>
+                    <img src="./img/Headset-DetailPage-thumb.jpg" alt="헤드셋 디테일페이지 섬네일">
+                </figure>
+                <h4>Brand Concept Planning</h4>
+                <h5 class="fwb">기획부터 비주얼 완성까지, 직접 설계한 로션 상세페이지</h5>
+            </a>
+        </div>
+        
+        <div class="detail-card">
+            <a href="./DetailPage2.html">
+                <figure>
+                    <img src="./img/Chair-DetailPage-thumb.jpg" alt="의자 디테일페이지 섬네일">
+                </figure>
+                <h4>Where Elegance Meets Next-Gen Technology</h4>
+                <h5 class="fwb">기술과 감각의 공존, 직접 설계한 무선 헤드셋 상세페이지</h5>
+            </a>
+        </div>
+
+        <div class="detail-card">
+            <a href="./DetailPage3.html">
+                <figure>
+                    <img src="./img/Cosmetics-DetailPage-thumb.jpg" alt="스킨패드 디테일페이지 섬네일">
+                </figure>
+                <h4>The Art of Ergonomic Seating & Human-Centered Design</h4>
+                <h5 class="fwb">업무의 질을 바꾸는 설계, 직접 기획한 프리미엄 오피스 체어 상세페이지</h5>
+            </a>
+        </div>
+
+        <div class="detail-card">
+            <a href="./DetailPage4.html">
+                <figure>
+                    <img src="./img/Cookies-DetailPage-thumb.jpg" alt="쿠키 디테일페이지 섬네일">
+                </figure>
+                <h4>The Art of Ergonomic Seating & Human-Centered Design</h4>
+                <h5 class="fwb">업무의 질을 바꾸는 설계, 직접 기획한 프리미엄 오피스 체어 상세페이지</h5>
+            </a>
+        </div>
+
+    </div>
+</section> -->
+
+       
+<section class="detailed-design-section">
+    <div class="common-fram">
+        <div class="sh">
+            <div class="number">04</div>
+            <div class="elastic-container fade-in-up">
+                    <svg style="height: 50px; width: 100%;" stroke="red">
+                        <path class="elastic-path" fill="transparent" stroke="black"></path>
+                    </svg>
+            </div>
+            
+        </div>
+        
+        <div class="full-width-line"></div>
+
+        <div class="inner-container">
+            <h2 class="cursive-title alex">Detailed Page Design</h2>
+            <p class="description-text">
+                상세페이지 디자인 제품의 매력을 가장 잘 보여줄 수 있는 상세페이지 디자인 입니다. 첫 눈에 시선을 사로잡는 비주얼부터 제품 정보를 감각적으로 풀어낸 레이아웃까지, 브랜드의 분위기를 섬세하게 담아냈습니다. 고객이 페이지를 천천히 들여다보고 싶어지는 경험을 만들기 위해 디자인 하였습니다.
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <div class="slider-container">
+        <div class="slider-track2" id="dragSlider2">
+            
+            <a href="page1.html" class="slide-card">
+                <div class="image-box">
+                    <a href="./DetailPage1.html"><img src="./img/Cosmetics-DetailPage-thumb.jpg" alt="Green Tea"></a>
+                    <div class="hover-overlay">
+                        <span>클릭</span>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <h3>GREEN TEA</h3>
+                    <p>스킨 패드 상세페이지</p>
+                </div>
+            </a>
+
+            <a href="page2.html" class="slide-card">
+                <div class="image-box">
+                    <a href="./DetailPage2.html"><img src="./img/Headset-DetailPage-thumb.jpg" alt="Lunaris H1"></a>
+                    <div class="hover-overlay">
+                        <span>클릭</span>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <h3>LUNARIS H1</h3>
+                    <p>헤드셋 상세페이지</p>
+                </div>
+            </a>
+
+            <a href="page3.html" class="slide-card">
+                <div class="image-box">
+                    <a href="./DetailPage3.html"><img src="./img/Chair-DetailPage-thumb.jpg" alt="Anthro Axis"></a>
+                    <div class="hover-overlay">
+                        <span>클릭</span>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <h3>ANTHRO AXIS</h3>
+                    <p>의자 상세페이지</p>
+                </div>
+            </a>
+            
+            <a href="page4.html" class="slide-card">
+                <div class="image-box">
+                    <a href="./DetailPage4.html"><img src="./img/Cookies-DetailPage-thumb.jpg" alt="Peached"></a>
+                    <div class="hover-overlay">
+                        <span>클릭</span>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <h3>PEACHED</h3>
+                    <p>쿠키 상세페이지</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+<!-- 웹 디자인 -->
+
+<div class="web-design-container">
+    <div class="common-fram">
+            <div class="number">05</div>
+            <div class="elastic-container fade-in-up">
+                    <svg style="height: 50px; width: 100%;" stroke="red">
+                        <path class="elastic-path" fill="transparent" stroke="black"></path>
+                    </svg>
+            </div>
+            <div class="text-box">
+                    <h2 class="cursive-title alex">Web Design</h2>
+                    <p class="description-text">
+                        웹 디자인 브랜드의 첫인상을 결정짓는 웹사이트를 제작하였습니다. 방문자가 페이지에 들어서는 순간, 브랜드의 가치와 감성이 자연스럽게 느껴질 수 있도록 섬세하게 설계한 웹 디자인 입니다. 세련된 레이아웃과 일관된 비주얼로 브랜드 신뢰감을 높이고, 사용자가 머물고 싶어지는 경험을 만들기 위해 디자인 하였습니다.
+                    </p>
+                </div>
+                <a href="#"><button>web</button></a>
+                <a href="#"><button>figma</button></a>
+            
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- 패키지 디자인 -->
+<section class="package-design-section">
+        <div class="common-fram">
+            
+            <div class="section-number">06</div>
+            
+            <div class="elastic-container fade-in-up">
+                    <svg style="height: 50px; width: 100%;" stroke="red">
+                        <path class="elastic-path" fill="transparent" stroke="black"></path>
+                    </svg>
+            </div>
+
+            <div class="content-area">
+                
+                <div class="text-box">
+                    <h2 class="cursive-title alex">Package Design</h2>
+                    <p class="description-text">
+                        웹 디자인 브랜드의 첫인상을 결정짓는 웹사이트를 제작하였습니다. 방문자가 페이지에 들어서는 순간, 브랜드의 가치와 감성이 자연스럽게 느껴질 수 있도록 섬세하게 설계한 웹 디자인 입니다. 세련된 레이아웃과 일관된 비주얼로 브랜드 신뢰감을 높이고, 사용자가 머물고 싶어지는 경험을 만들기 위해 디자인 하였습니다.
+                    </p>
+                </div>
+
+                <img src="./img/pak.png" alt="할라피뇨 스프레드 패키지" class="absolute-floating-image">
+                
+            </div>
+
+            <div class="divider-line"></div>
+
+        </div>
+    </section>
+
+
+
+
+
+<!-- 매트페인팅 -->
+
+<section class="video-section">
+    <div class="common-fram">   
+        <div class="inner-container header-top">
+            <div class="section-number">07</div>
+        </div>
+            <div class="elastic-container fade-in-up">
+                    <svg style="height: 50px; width: 100%;" stroke="red">
+                        <path class="elastic-path" fill="transparent" stroke="black"></path>
+                    </svg>
+            </div>
+        <div class="full-width-line"></div>
+
+        <div class="inner-container center-content">
+            
+            <h2 class="cursive-title alex">Matte Painting</h2>
+            <p class="description-text">
+                웹 디자인 브랜드의 첫인상을 결정짓는 웹사이트를 제작하였습니다. 방문자가 페이지에 들어서는 순간, 브랜드의 가치와 감성이 자연스럽게 느껴질 수 있도록 섬세하게 설계한 웹 디자인 입니다. 세련된 레이아웃과 일관된 비주얼로 브랜드 신뢰감을 높이고, 사용자가 머물고 싶어지는 경험을 만들기 위해 디자인 하였습니다.
+            </p>
+
+            <div class="video-wrapper">
+                <video controls class="portfolio-video">
+                    <source src="./video/mattePainting.mp4" type="video/mp4">
+                    브라우저가 동영상을 지원하지 않습니다.
+                </video>
+            </div>
+
+        </div>
+    </div> 
+</section>
+
+<div class="gallery-wrapper">
+        <div class="image-grid">
+            
+            <div class="grid-item">
+                <img src="./img/mat1.jpg" alt="판타지 풍경">
+            </div>
+            
+            <div class="grid-item">
+                <img src="./img/TED1.jpg" alt="도시 풍경">
+            </div>
+            
+            <div class="grid-item item-full">
+                <img src="./img/mat2.jpg" alt="설산 풍경">
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
