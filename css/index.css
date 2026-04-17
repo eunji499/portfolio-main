@@ -124,10 +124,13 @@ figure .key{
 }
 
 figure .look {
-    margin: 80rem auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.look-wrap{
+    margin: 70rem auto 0;
 }
 
 /* 어바웃 섹션------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -139,11 +142,11 @@ figure .look {
     background-color: #ffffff;
 }
 
-.about-text h2{
+.about-text h2 {
     font-size: 9rem;
     color: #BE3734;
+    padding-top: 4rem;
     margin-bottom: 0.5rem;
-    
 }
 
 .about-text h5{
@@ -230,6 +233,13 @@ button img{
     gap: 40px 2rem;
     padding: 2rem 10rem;
     background-color: #ffffff;
+}
+.skill-icon{
+    flex-shrink: 0;
+}
+.skill-icon img{
+    width:2.5rem;
+    aspect-ratio: 1/1;
 }
 
         /* 개별 스킬 카드 */
@@ -596,20 +606,21 @@ button img{
 
 
         .kp-popup-showcase {
-            position: relative; 
-            width: 100%;
+            position: relative;
+            width: auto;
             margin: 0 auto;
-            padding: 80px 20px 120px; 
+            padding: 4rem 1rem 6rem;
         }
 
         
-        .kp-popup-showcase__header {
-            text-align: right;
-            margin-right: 5%;
-            border-bottom: 1px solid red;
-            padding-bottom: 15rem;
-            margin-top: 20rem;
-        }
+    .kp-popup-showcase__header {
+        text-align: right;
+        /* margin-right: 5%; */
+        border-bottom: none;
+        padding-bottom: 15rem;
+        margin-top: 20rem;
+        padding: 0 5rem 0rem;
+    }
         .kp-popup-showcase__header-number {
             font-size: 80px;
             color: #d1303c; 
@@ -657,10 +668,8 @@ button img{
         
         .kp-popup-showcase__info-panel {
             flex: 0 0 450px;
-            background-color: #fff;
-            padding: 50px 40px;
             border: 25px solid rgba(0,0,0,0.03);
-           border-image: url(../img/lase-toll.png) 100 round;
+           border-image: url(../img/lase-toll.png) 90 round;
             text-align: center;
         }
         .kp-popup-showcase__info-number {
@@ -668,6 +677,10 @@ button img{
             font-weight: 700;
             color: #d1303c;
             margin-bottom: 20px;
+        }
+        .border-img{
+            background-color: #fff;
+            padding: 3rem;
         }
         .kp-popup-showcase__info-title {
             font-size: 24px;
@@ -838,18 +851,17 @@ button img{
        
 
     .container {
-      position: relative;
-      height: 1200px;
-      background:url(../img/pan.png) center / contain no-repeat; 
-      border-radius: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden; 
-      margin-top: 10rem;
-      margin-bottom: 15rem;
-    }
-
+        position: relative;
+        height: 850px;
+        background: url(../img/pan.png) center / contain no-repeat;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 10rem;
+        margin-bottom: 15rem;
+}
     
     .frame-inner {
       position: relative;
@@ -859,13 +871,18 @@ button img{
       justify-content: center;
       align-items: center;
     }
-
-    /* Swiper 스타일 -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-    .swiper {
-      width: 600px;  
-      height: 900px; 
+    .popup-swiper {
+        width: calc(100% - 540px);
     }
 
+
+    /* Swiper 스타일 -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.poster-mySwiper {
+    width: 370px;
+    /* height: 750px; */
+    aspect-ratio: 2/3;
+}
+    
     .swiper-slide img {
       width: 100%;
       height: 100%;
@@ -888,7 +905,7 @@ button img{
     /* 타이포 섹션 (글래스모피즘 + 드래그)------------------------------------------------------------------------------------------------------------------------------------------------------- */
   .glass-box {
     position: absolute;
-    left: 80%;
+    left: 70%;
     bottom: 25%;
     width: 280px;
     height: 400px;
@@ -947,8 +964,8 @@ button img{
 .bncontent-section {
     display: flex;
     align-items: center;
-    gap: 34rem;
-    border-bottom: 1px solid #BE3734;
+    gap: 20rem;
+   
     
 }
 
@@ -994,9 +1011,9 @@ button img{
 
 .title {
     font-size: 72px;
-    color: #c0392b; 
+    color: #c0392b;
     margin-bottom: 20px;
-   
+    margin-top: 10rem;
 }
 
 .paragraph {
@@ -1065,12 +1082,10 @@ button img{
     word-break: keep-all; 
 }
 /* 상세페이지 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* .Detail-title {
+.Detail-title {
     text-align: start;
     color: #BE3734;
     font-size: 6.5rem;
-    font-weight: 400;
-    margin-top: 25rem;
     margin-left: 6rem;
 }
 
@@ -1078,8 +1093,8 @@ button img{
 .detail-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 6rem;
-    width: 109%;
+    gap: 1rem;
+    width: 100%;
     max-width: 1800px;
     margin: 40px auto 0;
 }
@@ -1168,9 +1183,7 @@ button img{
 }
 
 .detail h2+p{
-    font-size:3rem;
     margin-bottom: 3rem;
-    text-align: center;
 }
 .detail h2+p+p{
     margin-bottom: 3rem;
@@ -1300,141 +1313,7 @@ button img{
     line-height: 140%;
 }
 
- */
-
-/* 전체 섹션 상하 여백 설정 */
-.detailed-design-section {
-    padding-top: 80px;
-    padding-bottom: 120px;
-}
-
-
-.inner-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 7rem;
-    padding: 0 40px;
-}
-
-
-
-
-
-.cursive-title {
-    font-size: 90px;
-    color: #cc3333;
-    font-weight: 400;
-    margin-bottom: 30px;
-    line-height: 1.2;
-}
-
-
-.description-text {
-    font-size: 16px;
-    color: #444;
-    max-width: 800px; 
-    word-break: keep-all; 
-}
-
-.slider-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    /* overflow: hidden;  */
-}
-
-
-.slider-track2 {
-    display: flex;
-    gap: 20px; 
-    overflow-x: auto; 
-    scroll-behavior: auto; 
-    padding-bottom: 20px;
-    cursor: grab; 
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
-}
-.slider-track2::-webkit-scrollbar {
-    display: none; 
-}
-.slider-track2:active {
-    cursor: grabbing; 
-}
-
-/* 개별 슬라이드 카드 */
-.slide-card {
-    flex: 0 0 300px; 
-    text-decoration: none; 
-    color: inherit; 
-    display: flex;
-    flex-direction: column;
-    gap: 15px; 
-    user-select: none; 
-    -webkit-user-drag: none;
-}
-
-
-.image-box {
-    position: relative; 
-    width: 100%;
-    height: 400px; 
-    overflow: hidden;
-    background-color: #fff; 
-}
-
-.image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    pointer-events: none; 
-}
-
-/* 마우스 호버 시 '클릭' 오버레이 설정 */
-.hover-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0; 
-    transition: opacity 0.3s ease; 
-}
-
-.hover-overlay span {
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border: 1px solid white;
-    padding: 10px 20px;
-    border-radius: 30px; 
-}
-
-
-.slide-card:hover .hover-overlay {
-    opacity: 1;
-}
-
-
-.text-box h3 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.text-box p {
-    font-size: 14px;
-    color: #555;
-}
-
-
-
-
-
+ 
 
 
 
@@ -1459,11 +1338,7 @@ button img{
     margin-bottom: 30px;
 }
 
-.divider-line {
-    width: 100%;
-    height: 1px;
-    background-color: #d1b5b5;
-}
+
 
 
 .content-area {
@@ -1471,7 +1346,7 @@ button img{
     display: flex;
     align-items: center;
     min-height: 350px; 
-    padding: 60px 0; 
+    padding: 10rem 0; 
 }
 
 .text-box {
@@ -1629,7 +1504,98 @@ button img{
 
 
 
+@media (max-width: 1440px) {
+.kp-popup-showcase__info-panel {
+    flex: 0 0 380px;
+    border: 20px solid rgba(0,0,0,0.03);
+    border-image: url(../img/lase-toll.png) 90 round;
+    text-align: center;
+}
+    .kp-popup-showcase__content {
+        gap: 20px;
+    }
+.popup-swiper {
+    width: 100%;
+}
+    .grid-text {
+        text-align: start;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+        border-bottom: 1px solid #BE3734;
+        padding-bottom: 5rem;
+        padding: 0 3rem 5rem;
+    }
 
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(20px, 1fr));
+        gap: 40px 2rem;
+        padding: 2rem 3rem;
+        background-color: #ffffff;
+    }
+}
+@media (max-width: 1280px) {
+    .lace-style {
+        border: 90px solid transparent;
+        margin: 0 3rem;
+        border-image: url(../img/lase-toll.png) 100 round;
+    }
+
+    .welcome-title {
+        color: #BE3734;
+        font-size: 9rem;
+        margin-bottom: 4rem;
+        text-align: center;
+        margin-top: 7rem;
+    }
+
+    .look-wrap {
+        margin: 40rem auto 0;
+    }
+}
+@media (max-width:1150px){
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(20px, 1fr));
+        gap: 40px 2rem;
+        padding: 2rem 3rem;
+        background-color: #ffffff;
+    }
+
+    .kp-popup-showcase__phone-mockup {
+        position: initial;
+        top: initial;
+        left: initial;
+        width: 500px;
+        height: auto;
+        z-index: 10;
+        pointer-events: none;
+        position: relative;
+        top: 17rem;
+    }
+
+    .kp-popup-showcase {
+        position: relative;
+        width: auto;
+        margin: 0 auto;
+        padding: 4rem 1rem 6rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+.kp-popup-showcase__header {
+    text-align: right;
+    /* margin-right: 5%; */
+    padding-bottom: 15rem;
+    margin-top: 1rem;
+    padding: 0 4rem 3rem;
+    align-self: stretch;
+}
+
+}
 
 /*  반응형 웹 디자인  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
@@ -1643,6 +1609,24 @@ button img{
     }
 }
 
+@media (max-width:860px){
+    .kp-popup-showcase__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 40px;
+        margin-top: 3rem;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .kp-popup-showcase__info-panel {
+        flex: 0 0 auto;
+        border: 20px solid rgba(0,0,0,0.03);
+        border-image: url(../img/lase-toll.png) 90 round;
+        text-align: center;
+    }
+}
+
 @media (max-width: 768px) {
     .detail-grid {
         grid-template-columns: 1fr; 
@@ -1652,6 +1636,138 @@ button img{
         margin: 0 1rem;
         border-image: url(../img/lase-toll.png) 100 round;
     }
+
+    .kp-popup-showcase__info-panel {
+        flex: 0 0 auto;
+        border: 20px solid rgba(0,0,0,0.03);
+        border-image: url(../img/lase-toll.png) 90 round;
+        text-align: center;
+    }
+
+ 
+    .popup-swiper {
+        width: 100%;
+    }
+
+    header{
+        display: none;
+    }
+    .button-container {
+        gap: 1rem;
+    }
+    #btnConcept {
+        width: inherit;
+    }
+    .common-fram {
+        width: auto;
+        margin: 0 1rem;
+    }
+
+    .welcome-title {
+        font-size: 6rem;
+    }
+    .look-wrap {
+        margin: 10rem auto 0;
+    }
+    .about-text h2 {
+        font-size: 3rem;
+    }
+    .lace-style {
+        border: 2.5rem solid transparent;
+        margin: 0 1rem;
+        border-image: url(../img/lase-toll.png) 90 round;
+    }
+    .grid-text {
+        text-align: start;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        border-bottom: 1px solid #BE3734;
+        padding-bottom: 5rem;
+        padding: 0 3rem 5rem;
+    }
+    .grid-text {
+        text-align: start;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        border-bottom: 1px solid #BE3734;
+        padding-bottom: 5rem;
+        padding: 0 1rem 5rem;
+    }
+
+    .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20px, 1fr));
+    gap: 40px 2rem;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+}
+
+.skill-card {
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+    flex-direction: column;
+}
+.skills-section h2 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    padding-top: 2rem;
+    color: #BE3734;
+    background-color: #ffffff;
+}
+.kp-popup-showcase__phone-mockup {
+    position: initial;
+    top: initial;
+    left: initial;
+    width: 80%;
+    height: auto;
+    z-index: 10;
+    pointer-events: none;
+    position: relative;
+    top: 11.4rem;
+}
+.kp-popup-showcase__header {
+    text-align: right;
+    /* margin-right: 5%; */
+    padding-bottom: 15rem;
+    margin-top: 9rem;
+    padding: 0 4rem 3rem;
+    align-self: stretch;
+}
+.kp-popup-showcase__header-title {
+    font-size: 64px;
+    color: #d1303c;
+    margin-top: 3rem;
+}
+.kp-popup-showcase {
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+    padding: 4rem 1rem 0rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.title {
+    font-size: 72px;
+    color: #c0392b;
+    margin-bottom: 20px;
+    margin-top: 3rem;
+}
+.container {
+    position: relative;
+    height: 1000px;
+    background: url(../img/pan.png) center / contain no-repeat;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 3rem;
+    margin-bottom: 15rem;
+}
 }
 
 
@@ -1671,18 +1787,4 @@ button img{
 
 
 
-
-
-
-    /* 반응형 섹션---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
-@media(max-width: 1720px){ }
-   
-
-
-@media(max-width: 1440px){}
-   
-
-@media(max-width: 768px){}
-  
 

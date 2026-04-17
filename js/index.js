@@ -222,7 +222,7 @@ containers.forEach(container => new ElasticLine(container));
         // 포스터 영역
         
        // 1. Swiper 초기화 및 'Cards' 이펙트 적용
-    const swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".poster-mySwiper", {
       effect: "cards", // 카드 넘기는 효과
       grabCursor: true,
     });
@@ -406,57 +406,7 @@ setInterval(moveToNextSlide, 3000);
                     }
                 });
 
-            const slider = document.getElementById('dragSlider');
-        let isDown = false; // 마우스 클릭 상태 확인
-        let startX; // 드래그 시작 X 좌표
-        let scrollLeft; // 드래그 시작 시점의 스크롤 위치
-        let isDragging = false; // 단순 클릭과 드래그를 구분하기 위한 변수
-
-        // 1. 마우스를 눌렀을 때 (드래그 시작)
-        slider.addEventListener('mousedown', (e) => {
-            isDown = true;
-            isDragging = false; // 누를 때는 아직 드래그 상태 아님
-            slider.classList.add('active'); // 마우스 커서 변경을 위한 클래스 추가
-            startX = e.pageX - slider.offsetLeft;
-            scrollLeft = slider.scrollLeft;
-        });
-
-        // 2. 마우스가 슬라이더 영역을 벗어났을 때 (드래그 취소)
-        slider.addEventListener('mouseleave', () => {
-            isDown = false;
-            slider.classList.remove('active');
-        });
-
-        // 3. 마우스 버튼을 뗐을 때 (드래그 끝)
-        slider.addEventListener('mouseup', () => {
-            isDown = false;
-            slider.classList.remove('active');
-        });
-
-        // 4. 마우스를 움직일 때 (실제 스크롤 발생)
-        slider.addEventListener('mousemove', (e) => {
-            if (!isDown) return; // 누르지 않은 상태면 함수 종료
-            
-            e.preventDefault(); // 기본 텍스트 선택 등 방지
-            isDragging = true; // 움직임이 발생했으므로 드래그 상태로 변경
-            
-            const x = e.pageX - slider.offsetLeft;
-            const walk = (x - startX) * 1.5; // * 1.5를 해서 실제 마우스 이동보다 조금 더 많이 스크롤되게 (감도 조절)
-            slider.scrollLeft = scrollLeft - walk;
-        });
-
-        // 5. 카드 클릭 시 (드래그와 클릭 구분)
-        // a 태그 내부의 모든 클릭 이벤트를 감지합니다.
-        const cards = document.querySelectorAll('.slide-card');
-        cards.forEach(card => {
-            card.addEventListener('click', (e) => {
-                // 만약 마우스를 떼는 순간 '드래그 중'이었다면, 링크 이동을 막습니다.
-                if (isDragging) {
-                    e.preventDefault();
-                }
-                // 드래그가 아니었다면 정상적으로 설정된 href 링크로 이동합니다.
-            });
-        });            
+           
 
 });
 
