@@ -80,29 +80,76 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // 웰컴 버튼 
-        const btnConcept = document.getElementById('btnConcept');
-        const btnColorsFonts = document.getElementById('btnColorsFonts');
+//         const btnConcept = document.getElementById('btnConcept');
+//         const btnColorsFonts = document.getElementById('btnColorsFonts');
         
-        const modalConcept = document.getElementById('modalConcept');
-        const modalColorsFonts = document.getElementById('modalColorsFonts');
+//         const modalConcept = document.getElementById('modalConcept');
+//         const modalColorsFonts = document.getElementById('modalColorsFonts');
         
-        const closeConcept = document.getElementById('closeConcept');
-        const closeColorsFonts = document.getElementById('closeColorsFonts');
+//         const closeConcept = document.getElementById('closeConcept');
+//         const closeColorsFonts = document.getElementById('closeColorsFonts');
 
-        if (btnConcept && modalConcept && closeConcept) {
-            btnConcept.addEventListener('click', () => modalConcept.classList.add('active'));
-            closeConcept.addEventListener('click', () => modalConcept.classList.remove('active'));
-        }
+//         if (btnConcept && modalConcept && closeConcept) {
+//             btnConcept.addEventListener('click', () => modalConcept.classList.add('active'));
+//             closeConcept.addEventListener('click', () => modalConcept.classList.remove('active'));
+//         }
         
-        if (btnColorsFonts && modalColorsFonts && closeColorsFonts) {
-            btnColorsFonts.addEventListener('click', () => modalColorsFonts.classList.add('active'));
-            closeColorsFonts.addEventListener('click', () => modalColorsFonts.classList.remove('active'));
-        }
+//         if (btnColorsFonts && modalColorsFonts && closeColorsFonts) {
+//             btnColorsFonts.addEventListener('click', () => modalColorsFonts.classList.add('active'));
+//             closeColorsFonts.addEventListener('click', () => modalColorsFonts.classList.remove('active'));
+//         }
 
-        window.addEventListener('click', (event) => {
-            if (modalConcept && event.target === modalConcept) modalConcept.classList.remove('active');
-            if (modalColorsFonts && event.target === modalColorsFonts) modalColorsFonts.classList.remove('active');
-        });
+//         window.addEventListener('click', (event) => {
+//             if (modalConcept && event.target === modalConcept) modalConcept.classList.remove('active');
+//             if (modalColorsFonts && event.target === modalColorsFonts) modalColorsFonts.classList.remove('active');
+//         });
+
+//   const modal = document.getElementById("imageModal");
+//     const btn = document.getElementById("openModalBtn");
+//     const closeBtn = document.getElementsByClassName("close-btn")[0];
+
+//     // 버튼 클릭 시 모달 열기
+//     btn.onclick = function() {
+//       modal.style.display = "block";
+//     }
+
+//     // X 버튼 클릭 시 모달 닫기
+//     closeBtn.onclick = function() {
+//       modal.style.display = "none";
+//     }
+
+//     // 모달 배경 클릭 시 닫기
+//     window.onclick = function(event) {
+//       if (event.target == modal) {
+//         modal.style.display = "none";
+//       }
+//     }
+
+// --- [기존 코드 유지] ---
+const btnConcept = document.getElementById('btnConcept');
+const btnColorsFonts = document.getElementById('btnColorsFonts');
+
+const modalConcept = document.getElementById('modalConcept');
+const modalColorsFonts = document.getElementById('modalColorsFonts');
+
+const closeConcept = document.getElementById('closeConcept');
+const closeColorsFonts = document.getElementById('closeColorsFonts');
+
+if (btnConcept && modalConcept && closeConcept) {
+    btnConcept.addEventListener('click', () => modalConcept.classList.add('active'));
+    closeConcept.addEventListener('click', () => modalConcept.classList.remove('active'));
+}
+
+if (btnColorsFonts && modalColorsFonts && closeColorsFonts) {
+    btnColorsFonts.addEventListener('click', () => modalColorsFonts.classList.add('active'));
+    closeColorsFonts.addEventListener('click', () => modalColorsFonts.classList.remove('active'));
+}
+
+// 기존 모달 배경 클릭 닫기
+window.addEventListener('click', (event) => {
+    if (modalConcept && event.target === modalConcept) modalConcept.classList.remove('active');
+    if (modalColorsFonts && event.target === modalColorsFonts) modalColorsFonts.classList.remove('active');
+});
 
 
 
@@ -356,7 +403,7 @@ function moveToNextSlide() {
     isTransitioning = true;
 
     // 1. 애니메이션 설정 및 왼쪽으로 100% 이동
-    track.style.transition = 'transform 0.5s ease-in-out';
+    track.style.transition = 'transform 1s ease';
     track.style.transform = 'translateX(-100%)';
 
     // 2. 애니메이션이 끝나는 시간(0.5초)에 맞춰 뒤처리 진행

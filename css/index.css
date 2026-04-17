@@ -134,6 +134,7 @@ figure .look {
 }
 
 /* 어바웃 섹션------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 모달 배경 스타일 (기본적으로 숨겨짐) */
 
 .about-text {
     width: auto;
@@ -622,21 +623,21 @@ button img{
         padding: 0 5rem 0rem;
     }
         .kp-popup-showcase__header-number {
-            font-size: 80px;
-            color: #d1303c; 
+            font-size: 4rem;
+            color: #BE3734;
             line-height: 1;
         }
       .kp-popup-showcase__header-title {
-        font-size: 64px;
-        color: #d1303c;
+        font-size: 6rem;
+        color: #BE3734;
         margin-top: 10rem;
 }
         .kp-popup-showcase__header-description {
-            font-size: 16px;
+            font-size: 1.25rem;
             color: #777;
             max-width: 500px;
             margin-left: auto;
-            margin-top: 20px;
+            margin-top: 1rem;
             line-height: 1.6;
             word-break: keep-all;
         }
@@ -931,18 +932,18 @@ button img{
 
     .glass-box h3 {
       margin: 0 0 10px 0;
-      font-size: 18px;
+      font-size: 1.25rem;
       color: #111;
       text-shadow: 0 1px 2px rgba(255,255,255,0.8); 
     }
 
     .glass-box p {
-      margin: 0;
-      font-size: 13px;
-      color: #333;
-      line-height: 1.5;
+        margin: 0;
+        font-size: 13px;
+        color: #333;
+        line-height: 1.6;
     }
-        
+            
     .poster-title{
         text-align: center;
         color: #BE3734;
@@ -979,8 +980,8 @@ button img{
 
 .number {
     text-align: right;
-    font-size: 6rem;
-    color: #c0392b;
+    font-size: 4rem;
+    color: #BE3734;
     text-align: start;
 }
 
@@ -988,7 +989,7 @@ button img{
 .content-section {
     display: flex; 
     align-items: flex-start;
-    gap: 40px; 
+    gap: 2rem; 
 }
 
 
@@ -1010,24 +1011,29 @@ button img{
 }
 
 .title {
-    font-size: 72px;
-    color: #c0392b;
+    font-size: 6rem;
+    color: #BE3734;
     margin-bottom: 20px;
     margin-top: 10rem;
 }
 
 .paragraph {
-    font-size: 16px;
+    font-size: 1.25rem;
     color: #333;
     white-space: pre-line; 
 }
 
+.description{
+    font-size: 1.25rem;
+    color: #777;
+    line-height: 1.6;
+}
 
 
 /* 슬라이더  */
 .slider-wrapper {
     overflow: hidden;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 5rem;
 }
@@ -1085,7 +1091,7 @@ button img{
 .Detail-title {
     text-align: start;
     color: #BE3734;
-    font-size: 6.5rem;
+    font-size: 6rem;
     margin-left: 6rem;
 }
 
@@ -1096,7 +1102,7 @@ button img{
     gap: 1rem;
     width: 100%;
     max-width: 1800px;
-    margin: 40px auto 0;
+    margin: 40px auto 20rem;
 }
 
 .detail-card a {
@@ -1315,7 +1321,26 @@ button img{
 
  
 
+/* 기본 버튼 스타일 */
+.web-custom-btn {
+  padding: 15px 50px; 
+  min-width: 150px; 
+  border-radius: 50px; 
+  border: 1px solid #333; 
+  background-color: #eef5f6; 
+  color: #333; 
+  font-size: 16px;
+  font-weight: bold; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+}
 
+/* 마우스를 올렸을 때(Hover)의 효과 */
+.web-custom-btn:hover {
+  background-color: #BE3734; 
+  color: #ffffff; 
+  border-color: #BE3734; 
+}
 
 
 /* 패키지 */
@@ -1326,7 +1351,6 @@ button img{
 
 .inner-container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -1342,11 +1366,11 @@ button img{
 
 
 .content-area {
-    position: relative; 
+    position: relative;
     display: flex;
     align-items: center;
-    min-height: 350px; 
-    padding: 10rem 0; 
+    min-height: 350px;
+    padding: 10rem 0rem 20rem 0;
 }
 
 .text-box {
@@ -1389,9 +1413,8 @@ button img{
 
 .inner-container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 0px;
 }
 
 
@@ -1400,8 +1423,8 @@ button img{
 }
 
 .section-number {
-    font-size: 80px;
-    color: #cc3333;
+    font-size: 4rem;
+    color: #BE3734;
     line-height: 1;
     margin-bottom: 20px;
 }
@@ -1422,8 +1445,8 @@ button img{
 }
 
 .cursive-title {
-    font-size: 90px;
-    color: #cc3333;
+    font-size: 6rem;
+    color: #BE3734;
     margin-bottom: 30px;
     line-height: 1.2;
 }

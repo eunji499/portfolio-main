@@ -45,7 +45,7 @@
      <header id="main-header">
         <nav>
             <ul>
-                <li><a href="#home">HOME</a></li>
+                <li><a href="#hero">HOME</a></li>
                 <li><a href="#popup">POPUP</a></li>
                 <li><a href="#banner">BANNER</a></li>
                 <li><a href="#poster">POSTER</a></li>
@@ -59,7 +59,7 @@
 
     
 <!-- 히어로 섹션 ------------------------------------------------------------------------------------------------------------------------------------------>
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="common-fram">
             <video class="bg-video-layer" autoplay loop muted playsinline>
                 <source src="./img/video.mp4" type="video/mp4">
@@ -177,7 +177,8 @@
                     <h2 class="alex fade-in-up">About  me</h2>
                     <h5 class="fade-in-up">사용자 경험을 기반으로 직관적이고 트렌디한 웹 디자인을 구현합니다.<br>데이터와 흐름을 고려한 설계를 통해, 사용자가 머무르고 싶은 화면을 만듭니다.<br>디자인과 사용성, 두 가지를 모두 만족시키는 결과물을 만들기 위하여 노력합니다.</h5>
     
-                    <button class="fade-in-up">profile</button>
+                    <a href="#" id="openModalBtn"><button class="fade-in-up ">profile</button></a>
+                   
     
                     <div class="grid-text fade-in-up">
                         <div class="text1">
@@ -393,7 +394,7 @@
     
 
 <!-- 팝업 진열 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-   <section class="kp-popup-showcase">
+   <section class="kp-popup-showcase" id="popup">
         
         <div class="kp-popup-showcase__header">
             <div class="kp-popup-showcase__header-number">01</div>
@@ -440,32 +441,33 @@
                     </div>
                     <div class="swiper-slide" 
                          data-number="02"
-                         data-title="나이키 에어포스 1 '07"
-                         data-description="어떤 스타일에도 자연스럽게 어울리는 변하지 않는 기준, 나이키 에어포스 1 '07 팝업 디자인입니다. 화이트 컬러의 깔끔함을 강조하는 비주얼로 제품의 아이코닉한 디자인을 부각시켰습니다. 심플하면서도 고급스러운 무드를 연출하여 브랜드 이미지를 제고하고, 즉각적인 구매 유도를 위한 'BUY NOW' 버튼을 배치했습니다.">
+                         data-title="나이키 에어포스 "
+                         data-description="나이키 운동화 팝업 디자인은 화이트 톤을 중심으로 미니멀하고 깨끗한 무드를 강조하고, 공중에 부유하는 연출로 제품의 가벼움을 시각화하였습니다. 또한 로고를 활용한 유성 형태의 그래픽으로 역동성을 더했으며, 제품을 최우선으로 강조하고 제품명을 보조 요소로 배치해 명확한 시각적 위계를 구축하여 디자인 하였습니다.">
+                        
                         <img src="img/poster2.png" alt="Nike Air Force Poster">
                     </div>
                     <div class="swiper-slide" 
                          data-number="03"
-                         data-title="크리스마스 선물 제안"
-                         data-description="따뜻하고 설레는 크리스마스 시즌을 맞아 소중한 사람을 위한 선물을 제안하는 팝업 디자인입니다. 아기자기한 선물 상자와 오너먼트 일러스트를 활용해 연말 특유의 분위기를 담아냈습니다. 특별한 혜택 정보를 눈에 띄게 배치하여 시즌 쇼핑의 즐거움을 더하고, 고객의 참여를 유도합니다.">
+                         data-title="크리스마스 행사팝업"
+                         data-description="크리스마스 시즌 한정 혜택을 강조한 팝업 디자인으로, 선물 상자와 리본 모티프를 중심으로 ‘혜택 제공’의 메시지를 직관적으로 전달하였습니다. 트리, 장식 오브제 등 크리스마스 요소를 활용하고, 어두운 밤 배경에 반짝이는 효과를 더해 축제 분위기와 기대감을 극대화하였습니다. 또한 시각적 포인트를 집중시켜 시즌 감성과 프로모션 메시지가 동시에 전달되도록 설계하였습니다.">
                         <img src="img/poster3.png" alt="Christmas Gift Poster">
                     </div>
                     <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="...1">
+                         data-number="04"
+                         data-title="나이키 에어포스"
+                         data-description="나이키 운동화를 1:1 비율의 팝업 디자인으로 구성하여 제품 자체의 존재감을 극대화하였습니다. 제품의 디자인 무드를 효과적으로 전달하기 위해 동일 계열의 색감을 활용해 전체 톤앤매너를 통일하고, 브랜드의 일관된 이미지를 강조하였습니다. 메인 타이포그래피는 제품 후면에 배치하여 자연스러운 공간감과 깊이감을 형성함으로써 시선이 제품에 먼저 집중되도록 설계하였으며, 또한 배경에는 빛줄기 연출을 적용해 통기성과 가벼운 착용감을 시각적으로 표현하였습니다. 기능적 특징을 직관적으로 전달할 수 있도록 구성하였습니다.">
                         <img src="./img/popup4.png" alt="Black Friday Poster Copy">
                     </div>
                     <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="...2">
+                         data-number="05"
+                         data-title="파이브 가이즈"
+                         data-description="파이브 가이즈의 신제품 햄버거 프로모션을 위한 팝업 디자인으로, 중앙에 실제 버거 이미지를 크게 배치해 제품 주목도를 극대화하였습니다. 햄버거 상단에는 연기 효과를 더해 언제나 따뜻하게 제공되는 브랜드 특성을 직관적으로 전달하였습니다. 전체 컬러는 브랜드 아이덴티티를 반영한 레드와 화이트를 기반으로 구성하고, 치즈버거의 특징을 강조하기 위해 옐로우 포인트를 활용하였습니다. 타이포그래피는 가독성이 높은 고딕 계열을 사용하고, 제품 후면에 배치하여 시각적 위계를 형성함으로써 버거가 가장 먼저 인지되도록 설계하였습니다.">
                         <img src="./img/popup5.png" alt="Black Friday Poster Copy">
                     </div>
                     <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="...3">
+                         data-number="06"
+                         data-title="크리스마스 이벤트 팝업"
+                         data-description="크리스마스 시즌을 위한 1:1 비율의 팝업 디자인으로, 일러스트 기반의 그래픽을 활용해 전체적으로 따뜻하고 귀여운 무드를 형성하였습니다. 페이퍼 아트 질감을 적용하여 레이어드된 입체감과 수공예적인 감성을 강조함으로써 크리스마스 특유의 아늑한 분위기를 효과적으로 전달하였습니다. 타이포그래피는 고딕과 세리프 스타일을 조합해 메인 타이포를 구성하고, 가독성과 개성을 보여주었으며 비주얼 요소와 타이포 간의 균형을 고려해 시각적 완성도를 높이고, 시즌 프로모션 분위기가 자연스럽게 전달되도록 설계하였다.">
                         <img src="./img/popup6.png" alt="Black Friday Poster Copy">
                     </div>
 
@@ -477,34 +479,37 @@
                     </div>
                     <div class="swiper-slide" 
                          data-number="02"
-                         data-title="나이키 에어포스 1 '07"
-                         data-description="어떤 스타일에도 자연스럽게 어울리는 변하지 않는 기준, 나이키 에어포스 1 '07 팝업 디자인입니다. 화이트 컬러의 깔끔함을 강조하는 비주얼로 제품의 아이코닉한 디자인을 부각시켰습니다. 심플하면서도 고급스러운 무드를 연출하여 브랜드 이미지를 제고하고, 즉각적인 구매 유도를 위한 'BUY NOW' 버튼을 배치했습니다.">
+                         data-title="나이키 에어포스 "
+                         data-description="나이키 운동화 팝업 디자인은 화이트 톤을 중심으로 미니멀하고 깨끗한 무드를 강조하고, 공중에 부유하는 연출로 제품의 가벼움을 시각화하였습니다. 또한 로고를 활용한 유성 형태의 그래픽으로 역동성을 더했으며, 제품을 최우선으로 강조하고 제품명을 보조 요소로 배치해 명확한 시각적 위계를 구축하여 디자인 하였습니다.">
+                        
                         <img src="img/poster2.png" alt="Nike Air Force Poster">
                     </div>
                     <div class="swiper-slide" 
                          data-number="03"
-                         data-title="크리스마스 선물 제안"
-                         data-description="따뜻하고 설레는 크리스마스 시즌을 맞아 소중한 사람을 위한 선물을 제안하는 팝업 디자인입니다. 아기자기한 선물 상자와 오너먼트 일러스트를 활용해 연말 특유의 분위기를 담아냈습니다. 특별한 혜택 정보를 눈에 띄게 배치하여 시즌 쇼핑의 즐거움을 더하고, 고객의 참여를 유도합니다.">
+                         data-title="크리스마스 행사팝업"
+                         data-description="크리스마스 시즌 한정 혜택을 강조한 팝업 디자인으로, 선물 상자와 리본 모티프를 중심으로 ‘혜택 제공’의 메시지를 직관적으로 전달하였습니다. 트리, 장식 오브제 등 크리스마스 요소를 활용하고, 어두운 밤 배경에 반짝이는 효과를 더해 축제 분위기와 기대감을 극대화하였습니다. 또한 시각적 포인트를 집중시켜 시즌 감성과 프로모션 메시지가 동시에 전달되도록 설계하였습니다.">
                         <img src="img/poster3.png" alt="Christmas Gift Poster">
                     </div>
                     <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="...1">
+                         data-number="04"
+                         data-title="나이키 에어포스"
+                         data-description="나이키 운동화를 1:1 비율의 팝업 디자인으로 구성하여 제품 자체의 존재감을 극대화하였습니다. 제품의 디자인 무드를 효과적으로 전달하기 위해 동일 계열의 색감을 활용해 전체 톤앤매너를 통일하고, 브랜드의 일관된 이미지를 강조하였습니다. 메인 타이포그래피는 제품 후면에 배치하여 자연스러운 공간감과 깊이감을 형성함으로써 시선이 제품에 먼저 집중되도록 설계하였으며, 또한 배경에는 빛줄기 연출을 적용해 통기성과 가벼운 착용감을 시각적으로 표현하였습니다. 기능적 특징을 직관적으로 전달할 수 있도록 구성하였습니다.">
                         <img src="./img/popup4.png" alt="Black Friday Poster Copy">
                     </div>
                     <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="...2">
+                         data-number="05"
+                         data-title="파이브 가이즈"
+                         data-description="파이브 가이즈의 신제품 햄버거 프로모션을 위한 팝업 디자인으로, 중앙에 실제 버거 이미지를 크게 배치해 제품 주목도를 극대화하였습니다. 햄버거 상단에는 연기 효과를 더해 언제나 따뜻하게 제공되는 브랜드 특성을 직관적으로 전달하였습니다. 전체 컬러는 브랜드 아이덴티티를 반영한 레드와 화이트를 기반으로 구성하고, 치즈버거의 특징을 강조하기 위해 옐로우 포인트를 활용하였습니다. 타이포그래피는 가독성이 높은 고딕 계열을 사용하고, 제품 후면에 배치하여 시각적 위계를 형성함으로써 버거가 가장 먼저 인지되도록 설계하였습니다.">
                         <img src="./img/popup5.png" alt="Black Friday Poster Copy">
                     </div>
                     <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="...3">
+                         data-number="06"
+                         data-title="크리스마스 이벤트 팝업"
+                         data-description="크리스마스 시즌을 위한 1:1 비율의 팝업 디자인으로, 일러스트 기반의 그래픽을 활용해 전체적으로 따뜻하고 귀여운 무드를 형성하였습니다. 페이퍼 아트 질감을 적용하여 레이어드된 입체감과 수공예적인 감성을 강조함으로써 크리스마스 특유의 아늑한 분위기를 효과적으로 전달하였습니다. 타이포그래피는 고딕과 세리프 스타일을 조합해 메인 타이포를 구성하고, 가독성과 개성을 보여주었으며 비주얼 요소와 타이포 간의 균형을 고려해 시각적 완성도를 높이고, 시즌 프로모션 분위기가 자연스럽게 전달되도록 설계하였다.">
                         <img src="./img/popup6.png" alt="Black Friday Poster Copy">
                     </div>
+
+                   
                 </div>
             </div>
             <script>
@@ -553,7 +558,7 @@
     </section>
 
 <!-- 포스터 영역 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <section class="poster">
+    <section class="poster" id="poster">
         <div class="common-fram">
             <span class="number">02</span>
              <div class="elastic-container fade-in-up">
@@ -564,7 +569,7 @@
             <div class="container-text">
                 <h2 class="title alex">Poster Design</h2>
                 <p class="description">
-                    포스터 디자인 브랜드의 무드와 감성을 한눈에 전달하는 포스터 디자인 입니다. 새로운 제품 출시부터 특별한 행사 안내까지, 브랜드의 소식을 감각적이고 세련되게 알릴 수 있도록 다양한 스타일로 제작하였습니다.
+                    포스터 디자인 브랜드의 무드와 감성을 한눈에 전달하는 포스터 디자인 입니다.<br> 새로운 제품 출시부터 특별한 행사 안내까지, 브랜드의 소식을 감각적이고 세련되게 알릴 수 있도록 다양한 스타일로 제작하였습니다.
                 </p>
             </div>
         </div>
@@ -640,10 +645,10 @@
 
     </section> -->
 
-<div class="banner-container">
+<div class="banner-container" id="banner">
     <div class="common-fram">
         <div class="sh">
-            <div class="number">03</div>
+            <div class="number" style="text-align: end;">03</div>
             <div class="elastic-container fade-in-up">
                     <svg style="height: 50px; width: 100%;" stroke="red">
                         <path class="elastic-path" fill="transparent" stroke="black"></path>
@@ -671,7 +676,7 @@
                 
                 <div class="slide">
                     <div class="poster-image">
-                        <img src="./img/Scarf-banne.jpg" alt="Acne Studios Hooded Scarf">
+                        <img src="./img/Scarf-banne.jpg" alt="Hooded Scarf 배너">
                     </div>
                     <div class="slide-info">
                         <div class="info-title">
@@ -685,11 +690,11 @@
 
                 <div class="slide">
                     <div class="poster-image">
-                        <img src="./img/Perfume-Banner.jpg" alt="Acne Studios Hooded Scarf">
+                        <img src="./img/Perfume-Banner.jpg" alt="Perfume 배너">
                     </div>
                     <div class="slide-info">
                         <div class="info-title">
-                            <h3>SECOND SCARF<br>두 번째 홍보 배너</h3>
+                            <h3>hetras<br>신제품 홍보 배너</h3>
                         </div>
                         <div class="info-desc">
                             <p>하기시러</p>
@@ -699,11 +704,53 @@
 
                 <div class="slide">
                     <div class="poster-image">
-                        <img src="./img/BlackFriday-Banner.jpg" alt="Acne Studios Hooded Scarf">
+                        <img src="./img/BlackFriday-Banner.jpg" alt="Black Friday 배너">
                     </div>
                     <div class="slide-info">
                         <div class="info-title">
-                            <h3>THIRD SCARF<br>세 번째 홍보 배너</h3>
+                            <h3>black friday<br>세일 홍보 배너</h3>
+                        </div>
+                        <div class="info-desc">
+                            <p>하기싫어</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="poster-image">
+                        <img src="./img/Pimawon-Banner.jpg" alt="pimawon 배너">
+                    </div>
+                    <div class="slide-info">
+                        <div class="info-title">
+                            <h3>pimawon<br>신제품 홍보 배너</h3>
+                        </div>
+                        <div class="info-desc">
+                            <p>하기싫어</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="poster-image">
+                        <img src="./img/Christmas-Banner.jpg" alt="christmas 배너">
+                    </div>
+                    <div class="slide-info">
+                        <div class="info-title">
+                            <h3>christmas<br>이벤트 홍보 배너</h3>
+                        </div>
+                        <div class="info-desc">
+                            <p>하기싫어</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="poster-image">
+                        <img src="./img/Adidas-Banner.jpg" alt="Adidas 배너">
+                    </div>
+                    <div class="slide-info">
+                        <div class="info-title">
+                            <h3>Adidas<br>신제품 홍보 배너</h3>
                         </div>
                         <div class="info-desc">
                             <p>하기싫어</p>
@@ -720,7 +767,7 @@
 
 
 
-<section class="detail" id="detail">
+<section class="detail" id="detailed-page">
     <section class="detailed-design-section">
     <div class="common-fram">
         <div class="sh">
@@ -789,9 +836,9 @@
 
 <!-- 웹 디자인 -->
 
-<div class="web-design-container">
+<div class="web-design-container" id="web-design">
     <div class="common-fram">
-            <div class="number">05</div>
+            <div class="number" style="text-align: end;">05</div>
             <div class="elastic-container fade-in-up">
                     <svg style="height: 50px; width: 100%;" stroke="red">
                         <path class="elastic-path" fill="transparent" stroke="black"></path>
@@ -803,9 +850,13 @@
                         웹 디자인 브랜드의 첫인상을 결정짓는 웹사이트를 제작하였습니다. 방문자가 페이지에 들어서는 순간, 브랜드의 가치와 감성이 자연스럽게 느껴질 수 있도록 섬세하게 설계한 웹 디자인 입니다. 세련된 레이아웃과 일관된 비주얼로 브랜드 신뢰감을 높이고, 사용자가 머물고 싶어지는 경험을 만들기 위해 디자인 하였습니다.
                     </p>
                 </div>
-                <a href="#"><button>web</button></a>
-                <a href="#"><button>figma</button></a>
-            
+                <a href="#" style="text-decoration: none;">
+                <button class="web-custom-btn">web</button>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                <button class="web-custom-btn">figma</button>
+                </a>
+            <div class="web-co"></div>
     </div>
 
 
@@ -817,7 +868,7 @@
 
 
 <!-- 패키지 디자인 -->
-<section class="package-design-section">
+<section class="package-design-section" id="package">
         <div class="common-fram">
             
             <div class="section-number">06</div>
@@ -841,115 +892,7 @@
                 
             </div>
 
-            <div class="divider-line"></div>
-            <div class="swiper package-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="블랙프라이데이 프로모션을 위한 팝업 디자인으로, 어두운 배경과 핑크 네온 컬러를 활용해 강렬한 대비와 시각적 집중도를 극대화했습니다. 중앙에는 택배 상자 모티프를 배치하여 '배송'과 '구매 완료'의 이미지를 직관적으로 전달하고, 주변에 반짝이는 아이콘 요소를 더해 기대감과 혜택의 분위기를 강조했습니다. 전체적으로 소비자의 즉각적인 구매 행동을 유도할 수 있도록 설계된 프로모션 중심의 비주얼 전략을 반영했습니다.">
-                        <img src="img/poster1.png" alt="Black Friday Poster">
-                    </div>
-                    <div class="swiper-slide" 
-                         data-number="02"
-                         data-title="나이키 에어포스 1 '07"
-                         data-description="어떤 스타일에도 자연스럽게 어울리는 변하지 않는 기준, 나이키 에어포스 1 '07 팝업 디자인입니다. 화이트 컬러의 깔끔함을 강조하는 비주얼로 제품의 아이코닉한 디자인을 부각시켰습니다. 심플하면서도 고급스러운 무드를 연출하여 브랜드 이미지를 제고하고, 즉각적인 구매 유도를 위한 'BUY NOW' 버튼을 배치했습니다.">
-                        <img src="img/poster2.png" alt="Nike Air Force Poster">
-                    </div>
-                    <div class="swiper-slide" 
-                         data-number="03"
-                         data-title="크리스마스 선물 제안"
-                         data-description="따뜻하고 설레는 크리스마스 시즌을 맞아 소중한 사람을 위한 선물을 제안하는 팝업 디자인입니다. 아기자기한 선물 상자와 오너먼트 일러스트를 활용해 연말 특유의 분위기를 담아냈습니다. 특별한 혜택 정보를 눈에 띄게 배치하여 시즌 쇼핑의 즐거움을 더하고, 고객의 참여를 유도합니다.">
-                        <img src="img/poster3.png" alt="Christmas Gift Poster">
-                    </div>
-                    <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="...1">
-                        <img src="./img/popup4.png" alt="Black Friday Poster Copy">
-                    </div>
-                    <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="...2">
-                        <img src="./img/popup5.png" alt="Black Friday Poster Copy">
-                    </div>
-                    <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="...3">
-                        <img src="./img/popup6.png" alt="Black Friday Poster Copy">
-                    </div>
-
-                    <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="블랙프라이데이 프로모션을 위한 팝업 디자인으로, 어두운 배경과 핑크 네온 컬러를 활용해 강렬한 대비와 시각적 집중도를 극대화했습니다. 중앙에는 택배 상자 모티프를 배치하여 '배송'과 '구매 완료'의 이미지를 직관적으로 전달하고, 주변에 반짝이는 아이콘 요소를 더해 기대감과 혜택의 분위기를 강조했습니다. 전체적으로 소비자의 즉각적인 구매 행동을 유도할 수 있도록 설계된 프로모션 중심의 비주얼 전략을 반영했습니다.">
-                        <img src="img/poster1.png" alt="Black Friday Poster">
-                    </div>
-                    <div class="swiper-slide" 
-                         data-number="02"
-                         data-title="나이키 에어포스 1 '07"
-                         data-description="어떤 스타일에도 자연스럽게 어울리는 변하지 않는 기준, 나이키 에어포스 1 '07 팝업 디자인입니다. 화이트 컬러의 깔끔함을 강조하는 비주얼로 제품의 아이코닉한 디자인을 부각시켰습니다. 심플하면서도 고급스러운 무드를 연출하여 브랜드 이미지를 제고하고, 즉각적인 구매 유도를 위한 'BUY NOW' 버튼을 배치했습니다.">
-                        <img src="img/poster2.png" alt="Nike Air Force Poster">
-                    </div>
-                    <div class="swiper-slide" 
-                         data-number="03"
-                         data-title="크리스마스 선물 제안"
-                         data-description="따뜻하고 설레는 크리스마스 시즌을 맞아 소중한 사람을 위한 선물을 제안하는 팝업 디자인입니다. 아기자기한 선물 상자와 오너먼트 일러스트를 활용해 연말 특유의 분위기를 담아냈습니다. 특별한 혜택 정보를 눈에 띄게 배치하여 시즌 쇼핑의 즐거움을 더하고, 고객의 참여를 유도합니다.">
-                        <img src="img/poster3.png" alt="Christmas Gift Poster">
-                    </div>
-                    <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="...1">
-                        <img src="./img/popup4.png" alt="Black Friday Poster Copy">
-                    </div>
-                    <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="...2">
-                        <img src="./img/popup5.png" alt="Black Friday Poster Copy">
-                    </div>
-                    <div class="swiper-slide" 
-                         data-number="01"
-                         data-title="블랙프라이데이"
-                         data-description="...3">
-                        <img src="./img/popup6.png" alt="Black Friday Poster Copy">
-                    </div>
-                </div>
-            </div>
-        </div>
-            <script>
-                const packageSwiper = new Swiper('.package-swiper', {
-                    speed:1000,
-                    autoplay: {
-                        delay: 2000,
-                    },
-                    loop: true,
-                    slidesPerView: 1,
-                    spaceBetween: 14,
-                    breakpoints: {
-                        320: {
-                            slidesPerView: 1.2,
-                            spaceBetween: 14,
-                        },
-                        768: {
-                            slidesPerView: 2.3,
-                            spaceBetween: 18,
-                        },
-
-                        1024: {
-                            slidesPerView: 2.7,
-                            spaceBetween: 20,
-                        },
-                        1440: {
-                            slidesPerView: 3.2,
-                            spaceBetween: 20,
-                        },
-                    },
-                });
-            </script>
+            
         
     </section>
 
@@ -959,7 +902,7 @@
 
 <!-- 매트페인팅 -->
 
-<section class="video-section">
+<section class="video-section" id="mat-painting">
     <div class="common-fram">   
         <div class="inner-container header-top">
             <div class="section-number">07</div>
