@@ -122,6 +122,9 @@
                     <div class="modal-body">
                         <div class="font-row">
                             <div class="font-label">Point</div>
+                        </div>
+                        <div class="font-row">
+                            <div class="font-label"></div>
                             <div class="font-preview preview-alex">Scorpio</div>
                             <div class="font-line"></div>
                             <div class="font-name">[Alex Brush]</div>
@@ -129,10 +132,6 @@
                         </div>
                         <div class="font-row">
                             <div class="font-label">Main</div>
-                            <div class="font-preview preview-angkor">Scorpio</div>
-                            <div class="font-line"></div>
-                            <div class="font-name">[Angkor]</div>
-                            <div class="font-desc">"디자인 요소 간의 균형과 디테일을 통해 완성도 높은 UI를 구현합니다. 단순한 미적 표현을 넘어, 브랜드 가치를 전달하는 디자인을 만듭니다."</div>
                         </div>
                         <div class="font-row">
                             <div class="font-label"></div> <div class="font-preview preview-suit">Scorpio</div>
@@ -671,96 +670,35 @@
             </div>
         </section>
 
-        <div class="slider-wrapper">
-            <div class="slider-track" id="sliderTrack">
+        <div class="swiper bannermySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide bannerim"><img src="./img/Scarf-banne.jpg" alt="스카프 배너"></div>
+            <div class="swiper-slide bannerim"><img src="./img/Perfume-Banner.jpg" alt="향수 배너"></div>
+            <div class="swiper-slide bannerim"><img src="./img/BlackFriday-Banner.jpg" alt="블랙프라이데이 배너"></div>
+            <div class="swiper-slide bannerim"><img src="./img/Pimawon-Banner.jpg" alt="피마원 배너"></div>
+            <div class="swiper-slide bannerim"><img src="./img/Christmas-Banner.jpg" alt="크리스마스 배너"></div>
+            <div class="swiper-slide bannerim"><img src="./img/Adidas-Banner.jpg" alt="아디다스 배너"></div>
+        </div>
+             <script>
+                var swiper = new Swiper(".bannermySwiper", {
+                spaceBetween: 30,
+                centeredSlides: false,
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
                 
-                <div class="slide">
-                    <div class="poster-image">
-                        <img src="./img/Scarf-banne.jpg" alt="Hooded Scarf 배너">
-                    </div>
-                    <div class="slide-info">
-                        <div class="info-title">
-                            <h3>HOODED SCARF<br>신제품 홍보 배너</h3>
-                        </div>
-                        <div class="info-desc">
-                            <p>블랙프라이데이기념 상품을 홍보하기 위하여 제작하였습니다. 블랙프라이데이기념 상품을 홍보하기 위하여 제작하였습니다. 블랙프라이데이기념 상품을 홍보하기 위하여 제작하였습니다.</p>
-                        </div>
-                    </div>
-                </div>
+                });
+            </script>
+       
 
-                <div class="slide">
-                    <div class="poster-image">
-                        <img src="./img/Perfume-Banner.jpg" alt="Perfume 배너">
-                    </div>
-                    <div class="slide-info">
-                        <div class="info-title">
-                            <h3>hetras<br>신제품 홍보 배너</h3>
-                        </div>
-                        <div class="info-desc">
-                            <p>하기시러</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="poster-image">
-                        <img src="./img/BlackFriday-Banner.jpg" alt="Black Friday 배너">
-                    </div>
-                    <div class="slide-info">
-                        <div class="info-title">
-                            <h3>black friday<br>세일 홍보 배너</h3>
-                        </div>
-                        <div class="info-desc">
-                            <p>하기싫어</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="poster-image">
-                        <img src="./img/Pimawon-Banner.jpg" alt="pimawon 배너">
-                    </div>
-                    <div class="slide-info">
-                        <div class="info-title">
-                            <h3>pimawon<br>신제품 홍보 배너</h3>
-                        </div>
-                        <div class="info-desc">
-                            <p>하기싫어</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="poster-image">
-                        <img src="./img/Christmas-Banner.jpg" alt="christmas 배너">
-                    </div>
-                    <div class="slide-info">
-                        <div class="info-title">
-                            <h3>christmas<br>이벤트 홍보 배너</h3>
-                        </div>
-                        <div class="info-desc">
-                            <p>하기싫어</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="poster-image">
-                        <img src="./img/Adidas-Banner.jpg" alt="Adidas 배너">
-                    </div>
-                    <div class="slide-info">
-                        <div class="info-title">
-                            <h3>Adidas<br>신제품 홍보 배너</h3>
-                        </div>
-                        <div class="info-desc">
-                            <p>하기싫어</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
+</div>
     
 
 <!-- 상세페이지 -->
@@ -793,7 +731,7 @@
                     <img src="./img/Headset-DetailPage-thumb.jpg" alt="헤드셋 디테일페이지 섬네일">
                 </figure>
                 <h4>Brand Concept Planning</h4>
-                <h5 class="fwb">기획부터 비주얼 완성까지, 직접 설계한 로션 상세페이지</h5>
+                <h5 class="fwb">헤드셋 상세페이지</h5>
             </a>
         </div>
         
@@ -803,7 +741,7 @@
                     <img src="./img/Chair-DetailPage-thumb.jpg" alt="의자 디테일페이지 섬네일">
                 </figure>
                 <h4>Where Elegance Meets Next-Gen Technology</h4>
-                <h5 class="fwb">기술과 감각의 공존, 직접 설계한 무선 헤드셋 상세페이지</h5>
+                <h5 class="fwb">의자 상세페이지</h5>
             </a>
         </div>
 
@@ -813,7 +751,7 @@
                     <img src="./img/Cosmetics-DetailPage-thumb.jpg" alt="스킨패드 디테일페이지 섬네일">
                 </figure>
                 <h4>The Art of Ergonomic Seating & Human-Centered Design</h4>
-                <h5 class="fwb">업무의 질을 바꾸는 설계, 직접 기획한 프리미엄 오피스 체어 상세페이지</h5>
+                <h5 class="fwb">스킨패드 상세페이지</h5>
             </a>
         </div>
 
@@ -823,7 +761,7 @@
                     <img src="./img/Cookies-DetailPage-thumb.jpg" alt="쿠키 디테일페이지 섬네일">
                 </figure>
                 <h4>The Art of Ergonomic Seating & Human-Centered Design</h4>
-                <h5 class="fwb">업무의 질을 바꾸는 설계, 직접 기획한 프리미엄 오피스 체어 상세페이지</h5>
+                <h5 class="fwb">쿠키 상세페이지</h5>
             </a>
         </div>
 
@@ -850,15 +788,65 @@
                         웹 디자인 브랜드의 첫인상을 결정짓는 웹사이트를 제작하였습니다. 방문자가 페이지에 들어서는 순간, 브랜드의 가치와 감성이 자연스럽게 느껴질 수 있도록 섬세하게 설계한 웹 디자인 입니다. 세련된 레이아웃과 일관된 비주얼로 브랜드 신뢰감을 높이고, 사용자가 머물고 싶어지는 경험을 만들기 위해 디자인 하였습니다.
                     </p>
                 </div>
-                <a href="#" style="text-decoration: none;">
-                <button class="web-custom-btn">web</button>
-                </a>
-                <a href="#" style="text-decoration: none;">
-                <button class="web-custom-btn">figma</button>
-                </a>
-            <div class="web-co"></div>
-    </div>
+               
+        </div>
+            
+        <!-- <div class="web-co">
+                <img src="" alt="">
 
+            </div> -->
+    
+                
+            <ul class="responsive-icon">
+                    <li>
+                        <h5 class="ani1">mobile</h5>
+                        <p class="ani1">768px</p>
+                    </li>
+                    <li>
+                        <h5 class="ani1">tab - pad</h5>
+                        <p class="ani1">1024px</p>
+                    </li>
+                    <li>
+
+                        <h5 class="ani1">desktop</h5>
+                        <p class="ani1">1920px</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-content">
+                <div class="common-frame">
+                    <h3 class="ani1"><span>1</span>Project</h3>
+                    <h4 class="ani1">MORVA Coffee Responsive WebSite</h4>
+                    <p class="fwb ani1">커피의 화려함보다는 '본질(Flavor)'과 '휴식(Moment)'에 집중했습니다.</p>
+                    <p class="ani1">장식적인 요소를 최소화하고 화이트 스페이스(여백)를 과감하게 활용하여,<br> 사용자가 브랜드의 이미지와 콘텐츠에 온전히 몰입할 수 있는 미니멀리즘 디자인을 채택했습니다.</p>
+                </div>
+                <ul class="project-sticky">
+                    <li><a href="#">Original</a></li>
+                    <li><a href="#">Renewal</a></li>
+                </ul>
+                <figure class="project-detail">
+                    <img src="./img/moov_pc.jpg" alt="모르바프로젝트 디테일샷 pc" class="pc">
+                    <img src="./img/moov_tab.jpg" alt="모르바프로젝트 디테일샷 mobile" class="mo">
+                </figure>
+            </div>
+            <div class="project-content">
+                <div class="common-frame">
+                    <h3 class="ani1"><span>2</span>Project</h3>
+                    <h4 class="ani1">MORVA Coffee Responsive WebSite</h4>
+                    <p class="fwb ani1">커피의 화려함보다는 '본질(Flavor)'과 '휴식(Moment)'에 집중했습니다.</p>
+                    <p class="ani1">장식적인 요소를 최소화하고 화이트 스페이스(여백)를 과감하게 활용하여,<br> 사용자가 브랜드의 이미지와 콘텐츠에 온전히 몰입할 수 있는 미니멀리즘 디자인을 채택했습니다.</p>
+                </div>
+                <ul class="project-sticky">
+                    <li><a href="#">Original</a></li>
+                    <li><a href="#">Renewal</a></li>
+                </ul>
+                <figure class="project-detail">
+                    <img src="./img/moov_pc.jpg" alt="모르바프로젝트 디테일샷 pc" class="pc">
+                    <img src="./img/moov_tab.jpg" alt="모르바프로젝트 디테일샷 mobile" class="mo">
+                </figure>
+            </div>
+    
+        </div>
 
 
 
@@ -891,8 +879,51 @@
                 <img src="./img/pak.png" alt="할라피뇨 스프레드 패키지" class="absolute-floating-image">
                 
             </div>
-
-            
+              <div class="swiper package-Swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide pkg"><img src="./img/pak-1.jpg" alt="패키지 디자인 1"></div>
+                <div class="swiper-slide pkg"><img src="./img/pak-2.jpg" alt="패키지 디자인 2"></div>
+                <div class="swiper-slide pkg"><img src="./img/pak-3.jpg" alt="패키지 디자인 3"></div>
+                <div class="swiper-slide pkg"><img src="./img/pak-4.jpg" alt="패키지 디자인 4"></div>
+                <div class="swiper-slide pkg"><img src="./img/pak-5.jpg" alt="패키지 디자인 5"></div>
+                <div class="swiper-slide pkg"><img src="./img/pak-6.jpg" alt="패키지 디자인 6"></div>
+                <div class="swiper-slide pkg"><img src="./img/pak-7.jpg" alt="패키지 디자인 7"></div>
+                </div>
+                
+            </div>      
+            <script>
+                var swiper = new Swiper(".package-Swiper", {
+                slidesPerView: 2.5,
+                spaceBetween: 30,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 25,
+                    },
+                    1024: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    1440: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 30,
+                    },
+                },
+                });
+            </script>
         
     </section>
 
@@ -953,17 +984,24 @@
 
 
 
-<footer>
-    <div class="common-fram">
-        <p>편지는 여기서 끝났지만, 열린 문 너머의 대화는 이제 시작입니다.</p>
-        <figure>
-            <img src="./img/" alt="">
-        </figure>
-    </div>
-</footer>
 
 
-
+<div class="contact" id="sec8">
+            <div class="common-frame">
+                <p>편지는 여기서 끝났지만, 열린 문 너머의 대화는 이제 시작입니다.</p>
+                <figure class="pro-img ">
+                    <img src="./img/pop.png" alt="웹디자이너 이은지">
+                </figure>
+                <h2 class="ani1">The web that catches the user's eye,<br>grows every day toward its completion.</h2>
+                <p class="ani1">사용자의 시선을 사로잡는 웹, 그 완성을 향해 매일 성장하겠습니다</p>
+                <h3>Web Designer 이은지</h3>
+                <ul class="contact-menu">
+                    <li class="ani1"><a href="#">Design Resume</a></li>
+                    <li class="ani1"><a href="tel:01080117026">010-8011-7026</a></li>
+                    <li class="ani1"><a href="mailto:jieunlee167@naver.com">jieunlee167@naver.com</a></li>
+                </ul>
+            </div>
+        </div>
 
 
 

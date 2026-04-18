@@ -966,7 +966,7 @@ button img{
     display: flex;
     align-items: center;
     gap: 20rem;
-   
+    margin-bottom: 10rem;
     
 }
 
@@ -993,9 +993,8 @@ button img{
 }
 
 
-.billboard-container {
-    flex: 1; 
-    max-width: 600px; 
+.bannermySwiper {
+    max-width: 80%;
 }
 
 .billboard-image {
@@ -1030,63 +1029,7 @@ button img{
 }
 
 
-/* 슬라이더  */
-.slider-wrapper {
-    overflow: hidden;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 5rem;
-}
 
-
-.slider-track {
-    display: flex; 
-    width: 100%;
-    
-}
-
-
-.slide {
-    flex: 0 0 100%; 
-    width: 100%;
-}
-
-
-.poster-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-
-.slide-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px 0; 
-    gap: 40px;
-}
-
-.info-title {
-    flex: 0 0 auto;
-}
-
-.info-title h3 {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.4;
-}
-
-.info-desc {
-    flex: 1; 
-}
-
-.info-desc p {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #555;
-    word-break: keep-all; 
-}
 /* 상세페이지 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .Detail-title {
     text-align: start;
@@ -1185,7 +1128,7 @@ button img{
 
 .detail{
     margin-top: 6rem;
-    margin-bottom: 6rem;
+
 }
 
 .detail h2+p{
@@ -1319,16 +1262,16 @@ button img{
     line-height: 140%;
 }
 
- 
+ /* 웹디자인----------------------------------------------------------------------------------------------------------------------- */
 
 /* 기본 버튼 스타일 */
 .web-custom-btn {
   padding: 15px 50px; 
   min-width: 150px; 
   border-radius: 50px; 
-  border: 1px solid #333; 
-  background-color: #eef5f6; 
-  color: #333; 
+  border: 1px solid #2D2928; 
+  background-color: #ECF6F7; 
+  color: #2D2928; 
   font-size: 16px;
   font-weight: bold; 
   cursor: pointer; 
@@ -1342,6 +1285,208 @@ button img{
   border-color: #BE3734; 
 }
 
+/* 킾------------------------------- */
+
+.project h2{
+    font-size:5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.project h2+p{
+    font-size:3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.project h2+p+p{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.ptitle{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+.responsive-icon{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    text-align: center;
+    width:50%;
+    margin:5rem auto;
+}
+.responsive-icon li{
+    flex:1;
+}
+.responsive-icon li h5{
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    text-transform: capitalize;
+}
+.mo{display: none;}
+.pc{display: block;}
+
+.project>.common-frame{
+    margin-bottom: 6rem;
+}
+.project-content{
+    background-color: #ECF6F7;
+    padding:6rem 0;
+    text-align: center;
+    padding-bottom: 0;
+}
+.project-content h3{
+    font-weight: 700;
+    display: inline-flex;
+    flex-direction: column;
+    gap:0.25rem;
+    margin-bottom: 3rem;
+}
+.project-content h4{
+    font-size:3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+.project-content h4+p{
+    margin-bottom: 1.5rem;
+}
+.project-sticky{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    position: sticky;
+    top:1rem;
+    font-weight: 500;
+}
+.project-sticky a{
+    padding: 15px 50px;
+    min-width: 150px;
+    border-radius: 50px;
+    border: 1px solid #2D2928;
+    background-color: #ECF6F7;
+    color: #2D2928;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.project-sticky a:hover{
+    background-color: #BE3734;
+    color: #ffffff;
+    border-color: #BE3734;
+}
+
+.contact{
+    background-color: #b9d1d4;
+    color:#2D2928;
+    padding:6rem 0 8rem;
+    text-align: center;
+}
+.contact h1{
+    font-size: calc(100vw / 11);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    position: sticky;
+    top:30vh;
+    left:0;
+    mix-blend-mode: difference;
+    opacity: 0.2;
+}
+.contact h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+.contact-menu{
+    display: inline-flex;
+    gap:0.5rem;
+    flex-direction: column;
+}
+.contact-menu a{
+    display: block;
+    padding:0.5rem 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border:1px solid #fff;
+    border-radius: 100px;
+}
+.contact-menu a:hover{
+    background-color: #fff;
+    color:#000;
+}
+
+.contact h3{
+    margin-top: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.menu-sticky{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    position: sticky;
+    left:0;
+    top:-2rem;
+    z-index: 2100;
+}
+.btn-menu{
+    width:4rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid #000; */
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    cursor: pointer;
+}
+.btn-menu img {
+    height: 1.2rem;
+    position: sticky;
+    left: 0;
+    top: 0.25rem;
+}
+
+.all-menu{
+    position: fixed;
+    width:300px;
+    padding:50px 30px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%)scale(0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition:all 0.4s ease 0s;
+    background-color: rgba(255, 255, 255, 0.883);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all-menu.on{
+    transform:translate(-50%,-50%)scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+.all-menu-list{
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    /* padding:20vh 0; */
+}
 
 /* 패키지 */
 
@@ -1395,8 +1540,32 @@ button img{
     width: 600px; 
     z-index: 5; 
 }
+.pkg img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+.package-Swiper {
+    width: 60%;
+    /* margin: 0 auto; */
+}
+.pkg {
+      width: 80%;
+    }
 
+    .pkg:nth-child(2n) {
+      width: 60%;
+    }
 
+    .pkg:nth-child(3n) {
+      width: 40%;
+    }
+
+.pro-img img{
+    margin-top: 3rem;
+    width: 120px;
+}
 
 
 
@@ -1487,7 +1656,7 @@ button img{
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 15px; 
-    margin-bottom: 10rem;
+    margin-bottom: 35rem;
 }
 
 .grid-item {

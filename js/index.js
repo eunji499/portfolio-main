@@ -393,37 +393,37 @@ containers.forEach(container => new ElasticLine(container));
   
     
 
-const track = document.getElementById('sliderTrack');
-let isTransitioning = false; // 슬라이드가 넘어가는 도중인지 확인하는 변수
+// const track = document.getElementById('sliderTrack');
+// let isTransitioning = false; // 슬라이드가 넘어가는 도중인지 확인하는 변수
 
-// 다음 슬라이드로 이동하는 함수
-function moveToNextSlide() {
-    // 이미 이동 중이라면 중복 실행 방지
-    if (isTransitioning) return;
-    isTransitioning = true;
+// // 다음 슬라이드로 이동하는 함수
+// function moveToNextSlide() {
+//     // 이미 이동 중이라면 중복 실행 방지
+//     if (isTransitioning) return;
+//     isTransitioning = true;
 
-    // 1. 애니메이션 설정 및 왼쪽으로 100% 이동
-    track.style.transition = 'transform 1s ease';
-    track.style.transform = 'translateX(-100%)';
+//     // 1. 애니메이션 설정 및 왼쪽으로 100% 이동
+//     track.style.transition = 'transform 1s ease';
+//     track.style.transform = 'translateX(-100%)';
 
-    // 2. 애니메이션이 끝나는 시간(0.5초)에 맞춰 뒤처리 진행
-    setTimeout(() => {
-        // 애니메이션(트랜지션)을 잠깐 끕니다.
-        track.style.transition = 'none';
+//     // 2. 애니메이션이 끝나는 시간(0.5초)에 맞춰 뒤처리 진행
+//     setTimeout(() => {
+//         // 애니메이션(트랜지션)을 잠깐 끕니다.
+//         track.style.transition = 'none';
         
-        // 맨 앞에 있던 첫 번째 슬라이드를 트랙의 맨 뒤로 이동시킵니다. (눈속임의 핵심)
-        track.appendChild(track.firstElementChild);
+//         // 맨 앞에 있던 첫 번째 슬라이드를 트랙의 맨 뒤로 이동시킵니다. (눈속임의 핵심)
+//         track.appendChild(track.firstElementChild);
         
-        // 트랙의 위치를 원래 자리(0)로 되돌립니다.
-        // 첫 번째 슬라이드가 뒤로 갔으므로, 자연스럽게 두 번째 슬라이드가 화면에 보이게 됩니다.
-        track.style.transform = 'translateX(0)';
+//         // 트랙의 위치를 원래 자리(0)로 되돌립니다.
+//         // 첫 번째 슬라이드가 뒤로 갔으므로, 자연스럽게 두 번째 슬라이드가 화면에 보이게 됩니다.
+//         track.style.transform = 'translateX(0)';
         
-        isTransitioning = false; // 이동 상태 해제
-    }, 500); // 500ms = 0.5초 (CSS transition 시간과 동일하게 맞춰야 합니다)
-}
+//         isTransitioning = false; // 이동 상태 해제
+//     }, 500); // 500ms = 0.5초 (CSS transition 시간과 동일하게 맞춰야 합니다)
+// }
 
-// 3초(3000ms)마다 자동으로 moveToNextSlide 함수를 실행
-setInterval(moveToNextSlide, 3000);
+// // 3초(3000ms)마다 자동으로 moveToNextSlide 함수를 실행
+// setInterval(moveToNextSlide, 3000);
 
 
     //  상세페이지
