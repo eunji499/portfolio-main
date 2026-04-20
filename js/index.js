@@ -11,8 +11,53 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
 
+//헤더
+ //헤더 스크롤시 사라졌다가 나타나기
+    const header = document.querySelector("header")
+    const smart = document.querySelector("#main-header")
 
+    let lastScrollTop = 0;
+    window.addEventListener('scroll',()=>{
+        //스크롤 바가 움직일 떄 실행될 소스코드
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop; //호환성을 위해서 만들어 놓은 소스코드
+        
+        if(scrollTop < lastScrollTop){
+             header.classList.add("on")
+             smart.classList.add("on")
+            
+        }
+        else{
+            header.classList.remove("on")
+            smart.classList.remove("on")
+            
+        }
+        lastScrollTop = scrollTop 
+    })
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileClose = document.getElementById('mobileClose');
 
+    const closeMobileMenu = () => {
+        mobileNav.classList.remove('active');
+        menuToggle.classList.remove('open');
+    };
+
+    menuToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
+
+    if (mobileClose) {
+        mobileClose.addEventListener('click', () => {
+            closeMobileMenu();
+        });
+    }
+
+    mobileNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            closeMobileMenu();
+        });
+    });
 
 // 히어로섹션 배경
 
@@ -25,10 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 bgVideo.playbackRate = 0.4;
             } 
     
-
-
-
-
 
             const elements = document.querySelectorAll('.fade-in-up');
 
@@ -276,7 +317,9 @@ containers.forEach(container => new ElasticLine(container));
 
     // 2. 포스터가 바뀔 때마다 텍스트 정보 업데이트
     const infoTitle = document.getElementById("infoTitle");
-    const infoDesc = document.getElementById("infoDesc");
+    const infoDesc1 = document.getElementById("infoDesc1");
+    const infoDesc2 = document.getElementById("infoDesc2");
+    const moodTitle = document.getElementById("moodTitle");
 
     swiper.on('slideChange', function () {
       // 현재 활성화된 슬라이드 요소를 가져옴
@@ -284,62 +327,64 @@ containers.forEach(container => new ElasticLine(container));
       
       // HTML에 적어둔 data-* 속성 값을 가져와서 텍스트 박스에 적용
       infoTitle.innerText = activeSlide.getAttribute('data-title');
-      infoDesc.innerText = activeSlide.getAttribute('data-desc');
+      infoDesc1.innerText = activeSlide.getAttribute('data-desc1');
+      infoDesc2.innerText = activeSlide.getAttribute('data-desc2');
+      moodTitle.innerText = activeSlide.getAttribute('data-mood');
     });
 
-    // 3. 드래그 앤 드롭 및 이동 제한 구역 설정 로직
-    const dragBox = document.getElementById('dragBox');
-    const boundary = document.getElementById('boundary');
+    // // 3. 드래그 앤 드롭 및 이동 제한 구역 설정 로직
+    // const dragBox = document.getElementById('dragBox');
+    // const boundary = document.getElementById('boundary');
 
-    if (dragBox && boundary) {
-        let isDragging = false;
-        let startX, startY, initialLeft, initialTop;
+    // if (dragBox && boundary) {
+    //     let isDragging = false;
+    //     let startX, startY, initialLeft, initialTop;
 
-    // 마우스 누를 때 (드래그 시작)
-    dragBox.addEventListener('mousedown', (e) => {
-      isDragging = true;
-      startX = e.clientX; // 마우스의 현재 X 좌표
-      startY = e.clientY; // 마우스의 현재 Y 좌표
+    // // 마우스 누를 때 (드래그 시작)
+    // dragBox.addEventListener('mousedown', (e) => {
+    //   isDragging = true;
+    //   startX = e.clientX; // 마우스의 현재 X 좌표
+    //   startY = e.clientY; // 마우스의 현재 Y 좌표
       
-      // 박스의 현재 CSS left, top 값 저장
-      initialLeft = dragBox.offsetLeft;
-      initialTop = dragBox.offsetTop;
-    });
+    //   // 박스의 현재 CSS left, top 값 저장
+    //   initialLeft = dragBox.offsetLeft;
+    //   initialTop = dragBox.offsetTop;
+    // });
 
-    // 마우스 움직일 때 (드래그 중)
-    document.addEventListener('mousemove', (e) => {
-      if (!isDragging) return;
+    // // 마우스 움직일 때 (드래그 중)
+    // document.addEventListener('mousemove', (e) => {
+    //   if (!isDragging) return;
 
-      // 마우스가 이동한 거리 계산
-      const dx = e.clientX - startX;
-      const dy = e.clientY - startY;
+    //   // 마우스가 이동한 거리 계산
+    //   const dx = e.clientX - startX;
+    //   const dy = e.clientY - startY;
 
-      // 이동할 새로운 좌표 계산
-      let newLeft = initialLeft + dx;
-      let newTop = initialTop + dy;
+    //   // 이동할 새로운 좌표 계산
+    //   let newLeft = initialLeft + dx;
+    //   let newTop = initialTop + dy;
 
-      // 제한 구역 (Bounding Box) 설정: 컨테이너(boundary) 밖으로 나가지 못하게 조건문 추가
-      const maxLeft = boundary.clientWidth - dragBox.offsetWidth;
-      const maxTop = boundary.clientHeight - dragBox.offsetHeight;
+    //   // 제한 구역 (Bounding Box) 설정: 컨테이너(boundary) 밖으로 나가지 못하게 조건문 추가
+    //   const maxLeft = boundary.clientWidth - dragBox.offsetWidth;
+    //   const maxTop = boundary.clientHeight - dragBox.offsetHeight;
 
-      // 좌우 끝값 제한
-      if (newLeft < 0) newLeft = 0;
-      if (newLeft > maxLeft) newLeft = maxLeft;
+    //   // 좌우 끝값 제한
+    //   if (newLeft < 0) newLeft = 0;
+    //   if (newLeft > maxLeft) newLeft = maxLeft;
 
-      // 상하 끝값 제한
-      if (newTop < 0) newTop = 0;
-      if (newTop > maxTop) newTop = maxTop;
+    //   // 상하 끝값 제한
+    //   if (newTop < 0) newTop = 0;
+    //   if (newTop > maxTop) newTop = maxTop;
 
-      // 계산된 좌표를 실제 요소에 적용
-      dragBox.style.left = `${newLeft}px`;
-      dragBox.style.top = `${newTop}px`;
-    });
+    //   // 계산된 좌표를 실제 요소에 적용
+    //   dragBox.style.left = `${newLeft}px`;
+    //   dragBox.style.top = `${newTop}px`;
+    // });
 
-        // 마우스를 뗄 때 (드래그 종료)
-        document.addEventListener('mouseup', () => {
-          isDragging = false;
-        });
-    }
+    //     // 마우스를 뗄 때 (드래그 종료)
+    //     document.addEventListener('mouseup', () => {
+    //       isDragging = false;
+    //     });
+    // }
 
 
 
