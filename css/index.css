@@ -1528,7 +1528,7 @@ button img{
 .contact {
     background-color: #b9d1d4;
     color: #2D2928;
-    padding: 6rem 0 4rem;
+    padding: 0 0 4rem 0;
     text-align: center;
     border-top: 60px solid transparent;
     border-image: url(../img/up-lace.png) 90 round;
@@ -2571,15 +2571,37 @@ button img{
 
 
 
+/* 예시----------- */
 
+.parallax-key-container {
+    position: absolute;
+    /* top: 2px;  */
+    right: 10%;
+    z-index: 10;
+    pointer-events: none; 
+    transition: transform 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+ } 
 
+.hanging-ribbon {
+    width: 2px;
+    height: 300px;
+    background: #BE3734;
+    margin: 0 auto;
+}
 
+.falling-key {
+    width: 50px;
+    height: auto;
+    transform-origin: top center;
+    animation: sway 3s ease-in-out infinite;
+} 
 
+@keyframes sway {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+}
 
-
-
-
-
-
-
-
+.contact p{
+    padding-top: 5rem;
+    width: auto;
+}

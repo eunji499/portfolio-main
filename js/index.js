@@ -498,6 +498,37 @@ containers.forEach(container => new ElasticLine(container));
                     }
                 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 페이지가 로드된 후 실행되도록 설정
+document.addEventListener('DOMContentLoaded', () => {
+    const envelope = document.getElementById('envelope');
+    const waxSeal = document.querySelector('.wax-seal');
+
+    // 열쇠(왁스 실)를 클릭했을 때
+    waxSeal.addEventListener('click', () => {
+        envelope.classList.add('opened');
+    });
+
+    // (선택 사항) 편지 내용을 다시 닫고 싶다면? 
+    // envelope.addEventListener('click', () => {
+    //     if(envelope.classList.contains('opened')) envelope.classList.remove('opened');
+    // });
+});
+
            
 
 });
