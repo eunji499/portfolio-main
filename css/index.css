@@ -1483,8 +1483,9 @@ button img{
     transform: translateX(0);
 }
 
-.project-detail{
+.project-detail {
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 
