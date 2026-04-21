@@ -377,36 +377,30 @@ containers.forEach(container => new ElasticLine(container));
 
 
 
+      
 
 
 
-        const projectContent = document.querySelectorAll('.project-content');
+        const observer2 = new IntersectionObserver((entries)=>{
+        entries.forEach((entry)=>{
+                if(entry.isIntersecting){
+                    //태그가 화면에 들어왔을 때
+                    entry.target.classList.add("on")
+                }
+                else{
+                    //태그가 화면 밖으로 나갔을 때
+                    entry.target.classList.remove("on")
+                }
+            })
+        },{
+            threshold:0 // 태그가 화면에 50%이상 보일 때 트리거
+        })
+        document.querySelectorAll(".project-content").forEach(tag=>{observer2.observe(tag)}) // 위에는 복사해서쓰고 이것만 고치면됨
 
-        
-        const observer2 = new IntersectionObserver((entries) => {
-            console.log(entries[0].isIntersecting)
-            
-            // 1. 화면에 들어온 요소들 (isIntersecting === true)
-            const visibleEntries = entries.filter(entry => entry.isIntersecting);
-            visibleEntries.forEach((entry) => {
-                entry.target.classList.add('on');
-            });
+     
 
-            // 2. 화면에서 벗어난 요소들 (isIntersecting === false)
-            const hiddenEntries = entries.filter(entry => !entry.isIntersecting);
-            hiddenEntries.forEach(entry => {
-                // ✨ 핵심: 화면 밖으로 나가면 'visible' 클래스를 제거하여 초기화합니다.
-                entry.target.classList.remove('on');
-            });
 
-        }, {
-            // 요소의 10%가 보일 때 감지 시작
-            threshold: 0.1 
-        });
-
-        projectContent.forEach(el => {
-            observer2.observe(el);
-        });
+       
 
            
 

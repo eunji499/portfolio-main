@@ -96,13 +96,13 @@ html {
         }
 
         header nav ul li a {
-            text-decoration: none;
-            color: #2D2928; 
-            font-size: 0.8rem;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            transition: color 0.3s;
-        }
+    text-decoration: none;
+    color: #2D2928;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+}
 
         header nav ul li a:hover {
             color: #BE3734; }
@@ -193,25 +193,7 @@ html {
 .header-mobile{
     display: none;
 }
-@media (max-width: 970px) {
-    #main-header {
-        display: none; 
-    }
-    .header-mobile {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        padding: 2rem;
-    }
-@media (min-width: 970px) {
-    #main-header {
-        display: flex; 
-    }
-    .header-mobile {
-        display: none; 
-    }
-}
-}
+
 
 .mobile-nav li {
     list-style: none;
@@ -286,7 +268,9 @@ figure .look {
 .look-wrap{
     margin: 60rem auto 0;
 }
-
+p{
+    line-height: 140%;;
+}
 /* 어바웃 섹션------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* 모달 배경 스타일 (기본적으로 숨겨짐) */
 
@@ -304,12 +288,13 @@ figure .look {
     margin-bottom: 0.5rem;
 }
 
-.about-text h5{
+.about-text h5 {
     font-size: 1rem;
     color: #2D2928;
     font-weight: 500;
     padding-bottom: 2rem;
     border-bottom: 1px solid #BE3734;
+    line-height: 140%;
 }
 
 .about-text button{
@@ -485,12 +470,13 @@ button img{
             width: 75px; 
             height: auto; 
             transform: rotate(20deg); }
-        .button-container {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-            justify-content: center;
+.button-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
 }
+.button-container .btn{}
         /* 버튼 스타일 */
 .btn {
     appearance: none;
@@ -517,7 +503,7 @@ button img{
             border-color: #2D2928; 
             color: #ffffff; }
         #btnConcept{
-            width: 250px;
+            /* width: 250px; */
         }
         /* 모달 공통 스타일 */
         .modal-overlay {
@@ -1470,8 +1456,9 @@ button img{
     margin-bottom: 3rem;
     color: #BE3734;
 }
-.project-content h4+p{
+.project-content h4+p {
     margin-bottom: 1.5rem;
+    font-weight: 700;
 }
 
 
@@ -1489,6 +1476,7 @@ button img{
     width: 180px;
     transform: translateX(calc(100% + 1rem));
     transition: all 0.7s ease 0s;
+    z-index: 333;
 }
 
 .project-content.on .project-sticky {
@@ -1501,15 +1489,14 @@ button img{
 
 
 
-.project-sticky>li{
-    
+.project-sticky>li {
     min-width: 150px;
     border-radius: 50px;
     border: 1px solid #2D2928;
     background-color: #ECF6F7;
     color: #2D2928;
-    font-size: 0.8rem;
-    font-weight: bold;
+    font-size: 0.7rem;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -2167,6 +2154,51 @@ button img{
 }
 
 }
+@media (max-width: 970px) {
+    #main-header {
+        display: none; 
+    }
+    .header-mobile {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+    .project-sticky a {
+        display: block;
+        padding: 0.5rem 1.5rem;
+    }
+    .project-sticky>li {
+    min-width: initial;
+    border-radius: 50px;
+    border: 1px solid #2D2928;
+    background-color: #ECF6F7;
+    color: #2D2928;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.project-sticky {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    position: fixed;
+    top: 4.4rem;
+    flex-direction: column;
+    font-weight: 500;
+    align-items: stretch;
+    right: 1rem;
+    width: auto;
+    transform: translateX(calc(100% + 1rem));
+    transition: all 0.7s ease 0s;
+    z-index: 333;
+}
+
+
+}
+
+
 
 @media (max-width:860px){
     .kp-popup-showcase__content {
