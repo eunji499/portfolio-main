@@ -124,15 +124,7 @@ html {
     box-sizing: border-box;
 }
 
-/* 햄버거 버튼 디자인 */
-.menu-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
+
 
 .bar {
     width: 25px;
@@ -145,7 +137,7 @@ html {
 .mobile-nav {
     position: fixed;
     top: 0;
-    right: -100%; /* 화면 밖 */
+    right: -100%; 
     width: 100%;
     height: 100vh;
     background: #fff;
@@ -272,7 +264,7 @@ p{
     line-height: 140%;;
 }
 /* 어바웃 섹션------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-/* 모달 배경 스타일 (기본적으로 숨겨짐) */
+/* 모달 배경 스타일  */
 
 .about-text {
     width: auto;
@@ -1014,7 +1006,7 @@ button img{
     border-image: url(../img/lase-toll.png) 95 round;
     background: #ffffff;
     background-clip: padding-box;
-    /* box-sizing: border-box; */
+    
 }
 
     .glass-box:active {
@@ -1059,16 +1051,7 @@ button img{
  /* 배너 섹션----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
-.banner-container {
-    
-}
-/* .bncontent-section {
-    display: flex;
-    align-items: center;
-    gap: 20rem;
-    margin-bottom: 10rem;
-    
-} */
+
 .banner-container .content-text-container{
     text-align: end;
 }
@@ -1380,7 +1363,7 @@ button img{
   transition: all 0.3s ease; 
 }
 
-/* 마우스를 올렸을 때(Hover)의 효과 */
+
 .web-custom-btn:hover {
   background-color: #BE3734; 
   color: #ffffff; 
@@ -1389,8 +1372,6 @@ button img{
 .web-design-container .text-box{
     text-align: end;
 }
-
-/* 킾------------------------------- */
 
 .project h2{
     font-size:5rem;
@@ -1439,7 +1420,6 @@ button img{
 }
 .project-content{
     background-color: #ECF6F7;
-    /* padding:6rem 0; */
     text-align: center;
     padding-bottom: 0;
 }
@@ -1576,7 +1556,6 @@ button img{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border:1px solid #000; */
     border-radius: 50%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1621,7 +1600,7 @@ button img{
     display: flex;
     flex-direction: column;
     gap:1rem;
-    /* padding:20vh 0; */
+    
 }
 
 /* 패키지 */
@@ -1650,8 +1629,7 @@ button img{
     position: relative;
     display: flex;
     align-items: center;
-    /* min-height: 350px; */
-    /* padding: 10rem 0rem 20rem 0; */
+
 }
 
 .text-box {
@@ -1742,7 +1720,7 @@ button img{
 }
 
 
-/* 콘텐츠 영역 (텍스트 & 영상) */
+/* 콘텐츠 영역 */
 .center-content {
     display: flex;
     flex-direction: column; 
@@ -1753,7 +1731,6 @@ button img{
 .cursive-title {
     font-size: 4.5rem;
     color: #BE3734;
-    /* margin-bottom: 1.5rem; */
     line-height: 1.2;
     margin-top: 2rem;
 }
@@ -1811,6 +1788,41 @@ button img{
 
 .item-full {
     grid-column: 1 / -1; 
+}
+
+
+
+.parallax-key-container {
+    position: absolute;
+    /* top: 2px;  */
+    right: 8%;
+    z-index: 10;
+    pointer-events: none; 
+    transition: transform 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+ } 
+
+.hanging-ribbon {
+    width: 2px;
+    height: 150px;
+    background: #BE3734;
+    margin: 0 auto;
+}
+
+.falling-key {
+    width: 50px;
+    height: auto;
+    transform-origin: top center;
+    animation: sway 3s ease-in-out infinite;
+} 
+
+@keyframes sway {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+}
+
+.contact .common-frame > :nth-child(2){
+    padding-top: 5rem;
+    width: auto;
 }
 
 
@@ -2105,7 +2117,6 @@ button img{
 }
 
 
-/*  반응형 웹 디자인  -------------------------------------------------------------------------------------------------------------------------- */
 @media (max-width:1080px){
     .frame-inner {
         width: 480px;
@@ -2663,37 +2674,3 @@ button img{
 
 
 
-/* 예시----------- */
-
-.parallax-key-container {
-    position: absolute;
-    /* top: 2px;  */
-    right: 8%;
-    z-index: 10;
-    pointer-events: none; 
-    transition: transform 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
- } 
-
-.hanging-ribbon {
-    width: 2px;
-    height: 150px;
-    background: #BE3734;
-    margin: 0 auto;
-}
-
-.falling-key {
-    width: 50px;
-    height: auto;
-    transform-origin: top center;
-    animation: sway 3s ease-in-out infinite;
-} 
-
-@keyframes sway {
-    0%, 100% { transform: rotate(-5deg); }
-    50% { transform: rotate(5deg); }
-}
-
-.contact .common-frame > :nth-child(2){
-    padding-top: 5rem;
-    width: auto;
-}
